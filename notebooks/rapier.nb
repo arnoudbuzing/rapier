@@ -1,0 +1,3724 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 15.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[    184629,       3716]
+NotebookOptionsPosition[    181711,       3662]
+NotebookOutlinePosition[    182104,       3678]
+CellTagsIndexPosition[    182061,       3675]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData["Quit"], "Input",
+ CellChangeTimes->{{3.983880615787662*^9, 3.983880616238361*^9}},
+ CellLabel->"In[12]:=",ExpressionUUID->"fecf55a1-1273-4726-925f-41a1d50f2b1c"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "PacletDirectoryLoad", "[", "\"\</Users/arnoudb/github/rapier/Rapier\>\"", 
+   "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.983879662385051*^9, 3.983879678035603*^9}, 
+   3.983881142469469*^9},
+ CellLabel->"In[1]:=",ExpressionUUID->"4fde9040-4853-4229-88f3-bd91530b3592"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Needs", "[", "\"\<Rapier`\>\"", "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.98387967984301*^9, 3.983879683163559*^9}, 
+   3.983881145391549*^9},
+ CellLabel->"In[2]:=",ExpressionUUID->"3ed5b1e0-1142-4583-b50e-8b891dd35bf3"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["LibraryFunction",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GraphicsBox[{
+              Thickness[0.038461538461538464`], {
+               FaceForm[{
+                 GrayLevel[0.93], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {
+                1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}}}, {{{
+                25.499999999999996`, 2.5}, {25.499999999999996`, 
+                1.3953100000000003`}, {24.604699999999998`, 
+                0.49999999999999994`}, {23.5, 0.49999999999999994`}, {2.5, 
+                0.49999999999999994`}, {1.3953100000000003`, 
+                0.49999999999999994`}, {0.49999999999999994`, 
+                1.3953100000000003`}, {0.49999999999999994`, 2.5}, {
+                0.49999999999999994`, 23.5}, {0.49999999999999994`, 
+                24.604699999999998`}, {1.3953100000000003`, 
+                25.499999999999996`}, {2.5, 25.499999999999996`}, {23.5, 
+                25.499999999999996`}, {24.604699999999998`, 
+                25.499999999999996`}, {25.499999999999996`, 
+                24.604699999999998`}, {25.499999999999996`, 23.5}, {
+                25.499999999999996`, 2.5}}}]}, {
+               FaceForm[{
+                 RGBColor[0.5, 0.5, 0.5], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{20.5426, 
+                19.116799999999998`}, {16.3832, 21.876199999999997`}, {
+                16.3832, 20.021499999999996`}, {6.930469999999999, 
+                20.021499999999996`}, {6.930469999999999, 
+                18.212100000000003`}, {16.3832, 18.212100000000003`}, {
+                16.3832, 16.357399999999995`}, {20.5426, 
+                19.116799999999998`}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{5.30508, 13.8391}, {
+                9.46445, 11.079700000000003`}, {9.46445, 
+                12.933999999999997`}, {18.917199999999998`, 
+                12.933999999999997`}, {18.917199999999998`, 14.7438}, {
+                9.46445, 14.7438}, {9.46445, 16.598}, {5.30508, 13.8391}}}], 
+               
+               FilledCurveBox[{{{1, 4, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {
+                0, 1, 0}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 
+                3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {1,
+                 3, 3}, {1, 3, 3}, {1, 3, 3}}}, CompressedData["
+1:eJxTTMoPSmVmYGBgBGJjIGYCYq4u+eR3VWoOxhkv5j+Qk3SA8fu/r5rKOVHM
+Yd2vmNyjZ9Qcrt9QXbW9S8RBg59767IidQcPMYPGaHFhB+Nn61SfiGo4xBwp
+T7o2V9Dh0Iolfg6/NBxEHv/x1Xgi4FB1XNNqkqQWnP+axUTQjFkbzn+oO2HB
+j/3aDg/Xn5T6WiDoYLs3aJpiqI7DrHN+bO6tQg4zfUR7vF7pQOyfIQyRd9d1
+WLL0U1kLoyjEPdm6DpoTXfQX7xBzKPjQejLkhDacL5J4+LL2Gm2HtNnSl4Vf
+iELM69J2qPZM3tLnJerQX1oozZugDfHPUxGI/4W1HQ5p3TthoyDi4D7lG1v8
+Mi2HgqL9zoEHhB1inOxe3BRG8MH62zXhfIbN1Z82CGhC/GMg4nCm3mN/7TYN
+iHlCUPdGakDc/1kUEr46GhD/eYnD+d9iBf/kC0vC+TuCrSL+X5Vy2HGR4R5T
+uAbEfxYykPBYp+HQqsCuesZAFhL+rJoQ/2rIQdxTpwkJ7yVycPfD+GDzVqLx
+xbUd5HYt2JfqBdWfpA2Jj9mykPDpgYaXtaxDy7yzq86vg8qvlIHE5ylY/Eo7
+XAt7o787TxfOB5ufqesQ9PbyxxkPZSDhZ6nrMAGU3u7LQtLLEx2HN2253UbX
+ofZ76jis/Pay4oynAsT8QG0HKZMv/gW7FCDyTFpwPsz/MD44/Mw1HFjb1uR9
+TVVwWKy880/7FHWIexrkIfLX1RzOMDZZVjHIOaDkh3vSDuj5AwCF11Vc
+                "]]}}, Background -> GrayLevel[0.93], Axes -> False, 
+             AspectRatio -> 1, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}], Frame -> True, FrameTicks -> None, 
+             FrameStyle -> Directive[
+               Thickness[Tiny], 
+               GrayLevel[0.7]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Function name: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"RapierWorldCreate\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Argument count: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["3", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GraphicsBox[{
+              Thickness[0.038461538461538464`], {
+               FaceForm[{
+                 GrayLevel[0.93], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {
+                1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}}}, {{{
+                25.499999999999996`, 2.5}, {25.499999999999996`, 
+                1.3953100000000003`}, {24.604699999999998`, 
+                0.49999999999999994`}, {23.5, 0.49999999999999994`}, {2.5, 
+                0.49999999999999994`}, {1.3953100000000003`, 
+                0.49999999999999994`}, {0.49999999999999994`, 
+                1.3953100000000003`}, {0.49999999999999994`, 2.5}, {
+                0.49999999999999994`, 23.5}, {0.49999999999999994`, 
+                24.604699999999998`}, {1.3953100000000003`, 
+                25.499999999999996`}, {2.5, 25.499999999999996`}, {23.5, 
+                25.499999999999996`}, {24.604699999999998`, 
+                25.499999999999996`}, {25.499999999999996`, 
+                24.604699999999998`}, {25.499999999999996`, 23.5}, {
+                25.499999999999996`, 2.5}}}]}, {
+               FaceForm[{
+                 RGBColor[0.5, 0.5, 0.5], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{20.5426, 
+                19.116799999999998`}, {16.3832, 21.876199999999997`}, {
+                16.3832, 20.021499999999996`}, {6.930469999999999, 
+                20.021499999999996`}, {6.930469999999999, 
+                18.212100000000003`}, {16.3832, 18.212100000000003`}, {
+                16.3832, 16.357399999999995`}, {20.5426, 
+                19.116799999999998`}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{5.30508, 13.8391}, {
+                9.46445, 11.079700000000003`}, {9.46445, 
+                12.933999999999997`}, {18.917199999999998`, 
+                12.933999999999997`}, {18.917199999999998`, 14.7438}, {
+                9.46445, 14.7438}, {9.46445, 16.598}, {5.30508, 13.8391}}}], 
+               
+               FilledCurveBox[{{{1, 4, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {
+                0, 1, 0}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 
+                3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {1,
+                 3, 3}, {1, 3, 3}, {1, 3, 3}}}, CompressedData["
+1:eJxTTMoPSmVmYGBgBGJjIGYCYq4u+eR3VWoOxhkv5j+Qk3SA8fu/r5rKOVHM
+Yd2vmNyjZ9Qcrt9QXbW9S8RBg59767IidQcPMYPGaHFhB+Nn61SfiGo4xBwp
+T7o2V9Dh0Iolfg6/NBxEHv/x1Xgi4FB1XNNqkqQWnP+axUTQjFkbzn+oO2HB
+j/3aDg/Xn5T6WiDoYLs3aJpiqI7DrHN+bO6tQg4zfUR7vF7pQOyfIQyRd9d1
+WLL0U1kLoyjEPdm6DpoTXfQX7xBzKPjQejLkhDacL5J4+LL2Gm2HtNnSl4Vf
+iELM69J2qPZM3tLnJerQX1oozZugDfHPUxGI/4W1HQ5p3TthoyDi4D7lG1v8
+Mi2HgqL9zoEHhB1inOxe3BRG8MH62zXhfIbN1Z82CGhC/GMg4nCm3mN/7TYN
+iHlCUPdGakDc/1kUEr46GhD/eYnD+d9iBf/kC0vC+TuCrSL+X5Vy2HGR4R5T
+uAbEfxYykPBYp+HQqsCuesZAFhL+rJoQ/2rIQdxTpwkJ7yVycPfD+GDzVqLx
+xbUd5HYt2JfqBdWfpA2Jj9mykPDpgYaXtaxDy7yzq86vg8qvlIHE5ylY/Eo7
+XAt7o787TxfOB5ufqesQ9PbyxxkPZSDhZ6nrMAGU3u7LQtLLEx2HN2253UbX
+ofZ76jis/Pay4oynAsT8QG0HKZMv/gW7FCDyTFpwPsz/MD44/Mw1HFjb1uR9
+TVVwWKy880/7FHWIexrkIfLX1RzOMDZZVjHIOaDkh3vSDuj5AwCF11Vc
+                "]]}}, Background -> GrayLevel[0.93], Axes -> False, 
+             AspectRatio -> 1, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}], Frame -> True, FrameTicks -> None, 
+             FrameStyle -> Directive[
+               Thickness[Tiny], 
+               GrayLevel[0.7]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Function name: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"RapierWorldCreate\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Argument count: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["3", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Argument types: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  PaneBox[
+                   RowBox[{"{", 
+                    RowBox[{"Real", ",", "Real", ",", "Real"}], "}"}], 
+                   ImageSize -> {{1, 500}, Automatic}, BaselinePosition -> 
+                   Baseline, ContentPadding -> False, FrameMargins -> 0, 
+                   StripOnInput -> True], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Return type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  PaneBox[
+                  "Integer", ImageSize -> {{1, 500}, Automatic}, 
+                   BaselinePosition -> Baseline, ContentPadding -> False, 
+                   FrameMargins -> 0, StripOnInput -> True], 
+                  "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Library: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"librapier_rs.dylib\"", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  LibraryFunction[
+  "/Users/arnoudb/github/rapier/Rapier/LibraryResources/MacOSX-ARM64/\
+librapier_rs.dylib", "RapierWorldCreate", {Real, Real, Real}, Integer],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Echo",
+ CellChangeTimes->{
+  3.983882419125787*^9},ExpressionUUID->"abdae004-e033-4db2-89a4-\
+89ea65240fbb"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["LibraryFunction",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GraphicsBox[{
+              Thickness[0.038461538461538464`], {
+               FaceForm[{
+                 GrayLevel[0.93], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {
+                1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}}}, {{{
+                25.499999999999996`, 2.5}, {25.499999999999996`, 
+                1.3953100000000003`}, {24.604699999999998`, 
+                0.49999999999999994`}, {23.5, 0.49999999999999994`}, {2.5, 
+                0.49999999999999994`}, {1.3953100000000003`, 
+                0.49999999999999994`}, {0.49999999999999994`, 
+                1.3953100000000003`}, {0.49999999999999994`, 2.5}, {
+                0.49999999999999994`, 23.5}, {0.49999999999999994`, 
+                24.604699999999998`}, {1.3953100000000003`, 
+                25.499999999999996`}, {2.5, 25.499999999999996`}, {23.5, 
+                25.499999999999996`}, {24.604699999999998`, 
+                25.499999999999996`}, {25.499999999999996`, 
+                24.604699999999998`}, {25.499999999999996`, 23.5}, {
+                25.499999999999996`, 2.5}}}]}, {
+               FaceForm[{
+                 RGBColor[0.5, 0.5, 0.5], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{20.5426, 
+                19.116799999999998`}, {16.3832, 21.876199999999997`}, {
+                16.3832, 20.021499999999996`}, {6.930469999999999, 
+                20.021499999999996`}, {6.930469999999999, 
+                18.212100000000003`}, {16.3832, 18.212100000000003`}, {
+                16.3832, 16.357399999999995`}, {20.5426, 
+                19.116799999999998`}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{5.30508, 13.8391}, {
+                9.46445, 11.079700000000003`}, {9.46445, 
+                12.933999999999997`}, {18.917199999999998`, 
+                12.933999999999997`}, {18.917199999999998`, 14.7438}, {
+                9.46445, 14.7438}, {9.46445, 16.598}, {5.30508, 13.8391}}}], 
+               
+               FilledCurveBox[{{{1, 4, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {
+                0, 1, 0}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 
+                3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {1,
+                 3, 3}, {1, 3, 3}, {1, 3, 3}}}, CompressedData["
+1:eJxTTMoPSmVmYGBgBGJjIGYCYq4u+eR3VWoOxhkv5j+Qk3SA8fu/r5rKOVHM
+Yd2vmNyjZ9Qcrt9QXbW9S8RBg59767IidQcPMYPGaHFhB+Nn61SfiGo4xBwp
+T7o2V9Dh0Iolfg6/NBxEHv/x1Xgi4FB1XNNqkqQWnP+axUTQjFkbzn+oO2HB
+j/3aDg/Xn5T6WiDoYLs3aJpiqI7DrHN+bO6tQg4zfUR7vF7pQOyfIQyRd9d1
+WLL0U1kLoyjEPdm6DpoTXfQX7xBzKPjQejLkhDacL5J4+LL2Gm2HtNnSl4Vf
+iELM69J2qPZM3tLnJerQX1oozZugDfHPUxGI/4W1HQ5p3TthoyDi4D7lG1v8
+Mi2HgqL9zoEHhB1inOxe3BRG8MH62zXhfIbN1Z82CGhC/GMg4nCm3mN/7TYN
+iHlCUPdGakDc/1kUEr46GhD/eYnD+d9iBf/kC0vC+TuCrSL+X5Vy2HGR4R5T
+uAbEfxYykPBYp+HQqsCuesZAFhL+rJoQ/2rIQdxTpwkJ7yVycPfD+GDzVqLx
+xbUd5HYt2JfqBdWfpA2Jj9mykPDpgYaXtaxDy7yzq86vg8qvlIHE5ylY/Eo7
+XAt7o787TxfOB5ufqesQ9PbyxxkPZSDhZ6nrMAGU3u7LQtLLEx2HN2253UbX
+ofZ76jis/Pay4oynAsT8QG0HKZMv/gW7FCDyTFpwPsz/MD44/Mw1HFjb1uR9
+TVVwWKy880/7FHWIexrkIfLX1RzOMDZZVjHIOaDkh3vSDuj5AwCF11Vc
+                "]]}}, Background -> GrayLevel[0.93], Axes -> False, 
+             AspectRatio -> 1, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}], Frame -> True, FrameTicks -> None, 
+             FrameStyle -> Directive[
+               Thickness[Tiny], 
+               GrayLevel[0.7]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Function name: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"RapierWorldDestroy\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Argument count: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["1", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GraphicsBox[{
+              Thickness[0.038461538461538464`], {
+               FaceForm[{
+                 GrayLevel[0.93], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {
+                1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}}}, {{{
+                25.499999999999996`, 2.5}, {25.499999999999996`, 
+                1.3953100000000003`}, {24.604699999999998`, 
+                0.49999999999999994`}, {23.5, 0.49999999999999994`}, {2.5, 
+                0.49999999999999994`}, {1.3953100000000003`, 
+                0.49999999999999994`}, {0.49999999999999994`, 
+                1.3953100000000003`}, {0.49999999999999994`, 2.5}, {
+                0.49999999999999994`, 23.5}, {0.49999999999999994`, 
+                24.604699999999998`}, {1.3953100000000003`, 
+                25.499999999999996`}, {2.5, 25.499999999999996`}, {23.5, 
+                25.499999999999996`}, {24.604699999999998`, 
+                25.499999999999996`}, {25.499999999999996`, 
+                24.604699999999998`}, {25.499999999999996`, 23.5}, {
+                25.499999999999996`, 2.5}}}]}, {
+               FaceForm[{
+                 RGBColor[0.5, 0.5, 0.5], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{20.5426, 
+                19.116799999999998`}, {16.3832, 21.876199999999997`}, {
+                16.3832, 20.021499999999996`}, {6.930469999999999, 
+                20.021499999999996`}, {6.930469999999999, 
+                18.212100000000003`}, {16.3832, 18.212100000000003`}, {
+                16.3832, 16.357399999999995`}, {20.5426, 
+                19.116799999999998`}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{5.30508, 13.8391}, {
+                9.46445, 11.079700000000003`}, {9.46445, 
+                12.933999999999997`}, {18.917199999999998`, 
+                12.933999999999997`}, {18.917199999999998`, 14.7438}, {
+                9.46445, 14.7438}, {9.46445, 16.598}, {5.30508, 13.8391}}}], 
+               
+               FilledCurveBox[{{{1, 4, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {
+                0, 1, 0}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 
+                3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {1,
+                 3, 3}, {1, 3, 3}, {1, 3, 3}}}, CompressedData["
+1:eJxTTMoPSmVmYGBgBGJjIGYCYq4u+eR3VWoOxhkv5j+Qk3SA8fu/r5rKOVHM
+Yd2vmNyjZ9Qcrt9QXbW9S8RBg59767IidQcPMYPGaHFhB+Nn61SfiGo4xBwp
+T7o2V9Dh0Iolfg6/NBxEHv/x1Xgi4FB1XNNqkqQWnP+axUTQjFkbzn+oO2HB
+j/3aDg/Xn5T6WiDoYLs3aJpiqI7DrHN+bO6tQg4zfUR7vF7pQOyfIQyRd9d1
+WLL0U1kLoyjEPdm6DpoTXfQX7xBzKPjQejLkhDacL5J4+LL2Gm2HtNnSl4Vf
+iELM69J2qPZM3tLnJerQX1oozZugDfHPUxGI/4W1HQ5p3TthoyDi4D7lG1v8
+Mi2HgqL9zoEHhB1inOxe3BRG8MH62zXhfIbN1Z82CGhC/GMg4nCm3mN/7TYN
+iHlCUPdGakDc/1kUEr46GhD/eYnD+d9iBf/kC0vC+TuCrSL+X5Vy2HGR4R5T
+uAbEfxYykPBYp+HQqsCuesZAFhL+rJoQ/2rIQdxTpwkJ7yVycPfD+GDzVqLx
+xbUd5HYt2JfqBdWfpA2Jj9mykPDpgYaXtaxDy7yzq86vg8qvlIHE5ylY/Eo7
+XAt7o787TxfOB5ufqesQ9PbyxxkPZSDhZ6nrMAGU3u7LQtLLEx2HN2253UbX
+ofZ76jis/Pay4oynAsT8QG0HKZMv/gW7FCDyTFpwPsz/MD44/Mw1HFjb1uR9
+TVVwWKy880/7FHWIexrkIfLX1RzOMDZZVjHIOaDkh3vSDuj5AwCF11Vc
+                "]]}}, Background -> GrayLevel[0.93], Axes -> False, 
+             AspectRatio -> 1, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}], Frame -> True, FrameTicks -> None, 
+             FrameStyle -> Directive[
+               Thickness[Tiny], 
+               GrayLevel[0.7]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Function name: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"RapierWorldDestroy\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Argument count: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["1", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Argument types: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  PaneBox[
+                   RowBox[{"{", "Integer", "}"}], 
+                   ImageSize -> {{1, 500}, Automatic}, BaselinePosition -> 
+                   Baseline, ContentPadding -> False, FrameMargins -> 0, 
+                   StripOnInput -> True], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Return type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  PaneBox[
+                   RowBox[{"True", "|", "False"}], 
+                   ImageSize -> {{1, 500}, Automatic}, BaselinePosition -> 
+                   Baseline, ContentPadding -> False, FrameMargins -> 0, 
+                   StripOnInput -> True], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Library: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"librapier_rs.dylib\"", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  LibraryFunction[
+  "/Users/arnoudb/github/rapier/Rapier/LibraryResources/MacOSX-ARM64/\
+librapier_rs.dylib", "RapierWorldDestroy", {Integer}, 
+   Alternatives[True, False]],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Echo",
+ CellChangeTimes->{
+  3.983882419152265*^9},ExpressionUUID->"91093282-1f2a-4783-bcb8-\
+4b249cfa8188"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["LibraryFunction",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GraphicsBox[{
+              Thickness[0.038461538461538464`], {
+               FaceForm[{
+                 GrayLevel[0.93], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {
+                1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}}}, {{{
+                25.499999999999996`, 2.5}, {25.499999999999996`, 
+                1.3953100000000003`}, {24.604699999999998`, 
+                0.49999999999999994`}, {23.5, 0.49999999999999994`}, {2.5, 
+                0.49999999999999994`}, {1.3953100000000003`, 
+                0.49999999999999994`}, {0.49999999999999994`, 
+                1.3953100000000003`}, {0.49999999999999994`, 2.5}, {
+                0.49999999999999994`, 23.5}, {0.49999999999999994`, 
+                24.604699999999998`}, {1.3953100000000003`, 
+                25.499999999999996`}, {2.5, 25.499999999999996`}, {23.5, 
+                25.499999999999996`}, {24.604699999999998`, 
+                25.499999999999996`}, {25.499999999999996`, 
+                24.604699999999998`}, {25.499999999999996`, 23.5}, {
+                25.499999999999996`, 2.5}}}]}, {
+               FaceForm[{
+                 RGBColor[0.5, 0.5, 0.5], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{20.5426, 
+                19.116799999999998`}, {16.3832, 21.876199999999997`}, {
+                16.3832, 20.021499999999996`}, {6.930469999999999, 
+                20.021499999999996`}, {6.930469999999999, 
+                18.212100000000003`}, {16.3832, 18.212100000000003`}, {
+                16.3832, 16.357399999999995`}, {20.5426, 
+                19.116799999999998`}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{5.30508, 13.8391}, {
+                9.46445, 11.079700000000003`}, {9.46445, 
+                12.933999999999997`}, {18.917199999999998`, 
+                12.933999999999997`}, {18.917199999999998`, 14.7438}, {
+                9.46445, 14.7438}, {9.46445, 16.598}, {5.30508, 13.8391}}}], 
+               
+               FilledCurveBox[{{{1, 4, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {
+                0, 1, 0}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 
+                3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {1,
+                 3, 3}, {1, 3, 3}, {1, 3, 3}}}, CompressedData["
+1:eJxTTMoPSmVmYGBgBGJjIGYCYq4u+eR3VWoOxhkv5j+Qk3SA8fu/r5rKOVHM
+Yd2vmNyjZ9Qcrt9QXbW9S8RBg59767IidQcPMYPGaHFhB+Nn61SfiGo4xBwp
+T7o2V9Dh0Iolfg6/NBxEHv/x1Xgi4FB1XNNqkqQWnP+axUTQjFkbzn+oO2HB
+j/3aDg/Xn5T6WiDoYLs3aJpiqI7DrHN+bO6tQg4zfUR7vF7pQOyfIQyRd9d1
+WLL0U1kLoyjEPdm6DpoTXfQX7xBzKPjQejLkhDacL5J4+LL2Gm2HtNnSl4Vf
+iELM69J2qPZM3tLnJerQX1oozZugDfHPUxGI/4W1HQ5p3TthoyDi4D7lG1v8
+Mi2HgqL9zoEHhB1inOxe3BRG8MH62zXhfIbN1Z82CGhC/GMg4nCm3mN/7TYN
+iHlCUPdGakDc/1kUEr46GhD/eYnD+d9iBf/kC0vC+TuCrSL+X5Vy2HGR4R5T
+uAbEfxYykPBYp+HQqsCuesZAFhL+rJoQ/2rIQdxTpwkJ7yVycPfD+GDzVqLx
+xbUd5HYt2JfqBdWfpA2Jj9mykPDpgYaXtaxDy7yzq86vg8qvlIHE5ylY/Eo7
+XAt7o787TxfOB5ufqesQ9PbyxxkPZSDhZ6nrMAGU3u7LQtLLEx2HN2253UbX
+ofZ76jis/Pay4oynAsT8QG0HKZMv/gW7FCDyTFpwPsz/MD44/Mw1HFjb1uR9
+TVVwWKy880/7FHWIexrkIfLX1RzOMDZZVjHIOaDkh3vSDuj5AwCF11Vc
+                "]]}}, Background -> GrayLevel[0.93], Axes -> False, 
+             AspectRatio -> 1, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}], Frame -> True, FrameTicks -> None, 
+             FrameStyle -> Directive[
+               Thickness[Tiny], 
+               GrayLevel[0.7]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Function name: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"RapierAddRigidBody\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Argument count: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["9", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GraphicsBox[{
+              Thickness[0.038461538461538464`], {
+               FaceForm[{
+                 GrayLevel[0.93], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {
+                1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}}}, {{{
+                25.499999999999996`, 2.5}, {25.499999999999996`, 
+                1.3953100000000003`}, {24.604699999999998`, 
+                0.49999999999999994`}, {23.5, 0.49999999999999994`}, {2.5, 
+                0.49999999999999994`}, {1.3953100000000003`, 
+                0.49999999999999994`}, {0.49999999999999994`, 
+                1.3953100000000003`}, {0.49999999999999994`, 2.5}, {
+                0.49999999999999994`, 23.5}, {0.49999999999999994`, 
+                24.604699999999998`}, {1.3953100000000003`, 
+                25.499999999999996`}, {2.5, 25.499999999999996`}, {23.5, 
+                25.499999999999996`}, {24.604699999999998`, 
+                25.499999999999996`}, {25.499999999999996`, 
+                24.604699999999998`}, {25.499999999999996`, 23.5}, {
+                25.499999999999996`, 2.5}}}]}, {
+               FaceForm[{
+                 RGBColor[0.5, 0.5, 0.5], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{20.5426, 
+                19.116799999999998`}, {16.3832, 21.876199999999997`}, {
+                16.3832, 20.021499999999996`}, {6.930469999999999, 
+                20.021499999999996`}, {6.930469999999999, 
+                18.212100000000003`}, {16.3832, 18.212100000000003`}, {
+                16.3832, 16.357399999999995`}, {20.5426, 
+                19.116799999999998`}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{5.30508, 13.8391}, {
+                9.46445, 11.079700000000003`}, {9.46445, 
+                12.933999999999997`}, {18.917199999999998`, 
+                12.933999999999997`}, {18.917199999999998`, 14.7438}, {
+                9.46445, 14.7438}, {9.46445, 16.598}, {5.30508, 13.8391}}}], 
+               
+               FilledCurveBox[{{{1, 4, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {
+                0, 1, 0}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 
+                3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {1,
+                 3, 3}, {1, 3, 3}, {1, 3, 3}}}, CompressedData["
+1:eJxTTMoPSmVmYGBgBGJjIGYCYq4u+eR3VWoOxhkv5j+Qk3SA8fu/r5rKOVHM
+Yd2vmNyjZ9Qcrt9QXbW9S8RBg59767IidQcPMYPGaHFhB+Nn61SfiGo4xBwp
+T7o2V9Dh0Iolfg6/NBxEHv/x1Xgi4FB1XNNqkqQWnP+axUTQjFkbzn+oO2HB
+j/3aDg/Xn5T6WiDoYLs3aJpiqI7DrHN+bO6tQg4zfUR7vF7pQOyfIQyRd9d1
+WLL0U1kLoyjEPdm6DpoTXfQX7xBzKPjQejLkhDacL5J4+LL2Gm2HtNnSl4Vf
+iELM69J2qPZM3tLnJerQX1oozZugDfHPUxGI/4W1HQ5p3TthoyDi4D7lG1v8
+Mi2HgqL9zoEHhB1inOxe3BRG8MH62zXhfIbN1Z82CGhC/GMg4nCm3mN/7TYN
+iHlCUPdGakDc/1kUEr46GhD/eYnD+d9iBf/kC0vC+TuCrSL+X5Vy2HGR4R5T
+uAbEfxYykPBYp+HQqsCuesZAFhL+rJoQ/2rIQdxTpwkJ7yVycPfD+GDzVqLx
+xbUd5HYt2JfqBdWfpA2Jj9mykPDpgYaXtaxDy7yzq86vg8qvlIHE5ylY/Eo7
+XAt7o787TxfOB5ufqesQ9PbyxxkPZSDhZ6nrMAGU3u7LQtLLEx2HN2253UbX
+ofZ76jis/Pay4oynAsT8QG0HKZMv/gW7FCDyTFpwPsz/MD44/Mw1HFjb1uR9
+TVVwWKy880/7FHWIexrkIfLX1RzOMDZZVjHIOaDkh3vSDuj5AwCF11Vc
+                "]]}}, Background -> GrayLevel[0.93], Axes -> False, 
+             AspectRatio -> 1, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}], Frame -> True, FrameTicks -> None, 
+             FrameStyle -> Directive[
+               Thickness[Tiny], 
+               GrayLevel[0.7]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Function name: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"RapierAddRigidBody\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Argument count: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["9", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Argument types: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  PaneBox[
+                   RowBox[{"{", 
+                    
+                    RowBox[{
+                    "Integer", ",", "Real", ",", "Real", ",", "Real", ",", 
+                    "Real", ",", "Real", ",", "Real", ",", "Real", ",", 
+                    "Integer"}], "}"}], ImageSize -> {{1, 500}, Automatic}, 
+                   BaselinePosition -> Baseline, ContentPadding -> False, 
+                   FrameMargins -> 0, StripOnInput -> True], 
+                  "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Return type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  PaneBox[
+                  "Integer", ImageSize -> {{1, 500}, Automatic}, 
+                   BaselinePosition -> Baseline, ContentPadding -> False, 
+                   FrameMargins -> 0, StripOnInput -> True], 
+                  "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Library: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"librapier_rs.dylib\"", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  LibraryFunction[
+  "/Users/arnoudb/github/rapier/Rapier/LibraryResources/MacOSX-ARM64/\
+librapier_rs.dylib", "RapierAddRigidBody", {
+   Integer, Real, Real, Real, Real, Real, Real, Real, Integer}, Integer],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Echo",
+ CellChangeTimes->{
+  3.9838824191612463`*^9},ExpressionUUID->"ddaf2da8-93f8-471d-98b0-\
+afd67bc9b820"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["LibraryFunction",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GraphicsBox[{
+              Thickness[0.038461538461538464`], {
+               FaceForm[{
+                 GrayLevel[0.93], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {
+                1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}}}, {{{
+                25.499999999999996`, 2.5}, {25.499999999999996`, 
+                1.3953100000000003`}, {24.604699999999998`, 
+                0.49999999999999994`}, {23.5, 0.49999999999999994`}, {2.5, 
+                0.49999999999999994`}, {1.3953100000000003`, 
+                0.49999999999999994`}, {0.49999999999999994`, 
+                1.3953100000000003`}, {0.49999999999999994`, 2.5}, {
+                0.49999999999999994`, 23.5}, {0.49999999999999994`, 
+                24.604699999999998`}, {1.3953100000000003`, 
+                25.499999999999996`}, {2.5, 25.499999999999996`}, {23.5, 
+                25.499999999999996`}, {24.604699999999998`, 
+                25.499999999999996`}, {25.499999999999996`, 
+                24.604699999999998`}, {25.499999999999996`, 23.5}, {
+                25.499999999999996`, 2.5}}}]}, {
+               FaceForm[{
+                 RGBColor[0.5, 0.5, 0.5], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{20.5426, 
+                19.116799999999998`}, {16.3832, 21.876199999999997`}, {
+                16.3832, 20.021499999999996`}, {6.930469999999999, 
+                20.021499999999996`}, {6.930469999999999, 
+                18.212100000000003`}, {16.3832, 18.212100000000003`}, {
+                16.3832, 16.357399999999995`}, {20.5426, 
+                19.116799999999998`}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{5.30508, 13.8391}, {
+                9.46445, 11.079700000000003`}, {9.46445, 
+                12.933999999999997`}, {18.917199999999998`, 
+                12.933999999999997`}, {18.917199999999998`, 14.7438}, {
+                9.46445, 14.7438}, {9.46445, 16.598}, {5.30508, 13.8391}}}], 
+               
+               FilledCurveBox[{{{1, 4, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {
+                0, 1, 0}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 
+                3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {1,
+                 3, 3}, {1, 3, 3}, {1, 3, 3}}}, CompressedData["
+1:eJxTTMoPSmVmYGBgBGJjIGYCYq4u+eR3VWoOxhkv5j+Qk3SA8fu/r5rKOVHM
+Yd2vmNyjZ9Qcrt9QXbW9S8RBg59767IidQcPMYPGaHFhB+Nn61SfiGo4xBwp
+T7o2V9Dh0Iolfg6/NBxEHv/x1Xgi4FB1XNNqkqQWnP+axUTQjFkbzn+oO2HB
+j/3aDg/Xn5T6WiDoYLs3aJpiqI7DrHN+bO6tQg4zfUR7vF7pQOyfIQyRd9d1
+WLL0U1kLoyjEPdm6DpoTXfQX7xBzKPjQejLkhDacL5J4+LL2Gm2HtNnSl4Vf
+iELM69J2qPZM3tLnJerQX1oozZugDfHPUxGI/4W1HQ5p3TthoyDi4D7lG1v8
+Mi2HgqL9zoEHhB1inOxe3BRG8MH62zXhfIbN1Z82CGhC/GMg4nCm3mN/7TYN
+iHlCUPdGakDc/1kUEr46GhD/eYnD+d9iBf/kC0vC+TuCrSL+X5Vy2HGR4R5T
+uAbEfxYykPBYp+HQqsCuesZAFhL+rJoQ/2rIQdxTpwkJ7yVycPfD+GDzVqLx
+xbUd5HYt2JfqBdWfpA2Jj9mykPDpgYaXtaxDy7yzq86vg8qvlIHE5ylY/Eo7
+XAt7o787TxfOB5ufqesQ9PbyxxkPZSDhZ6nrMAGU3u7LQtLLEx2HN2253UbX
+ofZ76jis/Pay4oynAsT8QG0HKZMv/gW7FCDyTFpwPsz/MD44/Mw1HFjb1uR9
+TVVwWKy880/7FHWIexrkIfLX1RzOMDZZVjHIOaDkh3vSDuj5AwCF11Vc
+                "]]}}, Background -> GrayLevel[0.93], Axes -> False, 
+             AspectRatio -> 1, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}], Frame -> True, FrameTicks -> None, 
+             FrameStyle -> Directive[
+               Thickness[Tiny], 
+               GrayLevel[0.7]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Function name: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"RapierAddColliderCuboid\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Argument count: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["6", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GraphicsBox[{
+              Thickness[0.038461538461538464`], {
+               FaceForm[{
+                 GrayLevel[0.93], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {
+                1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}}}, {{{
+                25.499999999999996`, 2.5}, {25.499999999999996`, 
+                1.3953100000000003`}, {24.604699999999998`, 
+                0.49999999999999994`}, {23.5, 0.49999999999999994`}, {2.5, 
+                0.49999999999999994`}, {1.3953100000000003`, 
+                0.49999999999999994`}, {0.49999999999999994`, 
+                1.3953100000000003`}, {0.49999999999999994`, 2.5}, {
+                0.49999999999999994`, 23.5}, {0.49999999999999994`, 
+                24.604699999999998`}, {1.3953100000000003`, 
+                25.499999999999996`}, {2.5, 25.499999999999996`}, {23.5, 
+                25.499999999999996`}, {24.604699999999998`, 
+                25.499999999999996`}, {25.499999999999996`, 
+                24.604699999999998`}, {25.499999999999996`, 23.5}, {
+                25.499999999999996`, 2.5}}}]}, {
+               FaceForm[{
+                 RGBColor[0.5, 0.5, 0.5], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{20.5426, 
+                19.116799999999998`}, {16.3832, 21.876199999999997`}, {
+                16.3832, 20.021499999999996`}, {6.930469999999999, 
+                20.021499999999996`}, {6.930469999999999, 
+                18.212100000000003`}, {16.3832, 18.212100000000003`}, {
+                16.3832, 16.357399999999995`}, {20.5426, 
+                19.116799999999998`}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{5.30508, 13.8391}, {
+                9.46445, 11.079700000000003`}, {9.46445, 
+                12.933999999999997`}, {18.917199999999998`, 
+                12.933999999999997`}, {18.917199999999998`, 14.7438}, {
+                9.46445, 14.7438}, {9.46445, 16.598}, {5.30508, 13.8391}}}], 
+               
+               FilledCurveBox[{{{1, 4, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {
+                0, 1, 0}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 
+                3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {1,
+                 3, 3}, {1, 3, 3}, {1, 3, 3}}}, CompressedData["
+1:eJxTTMoPSmVmYGBgBGJjIGYCYq4u+eR3VWoOxhkv5j+Qk3SA8fu/r5rKOVHM
+Yd2vmNyjZ9Qcrt9QXbW9S8RBg59767IidQcPMYPGaHFhB+Nn61SfiGo4xBwp
+T7o2V9Dh0Iolfg6/NBxEHv/x1Xgi4FB1XNNqkqQWnP+axUTQjFkbzn+oO2HB
+j/3aDg/Xn5T6WiDoYLs3aJpiqI7DrHN+bO6tQg4zfUR7vF7pQOyfIQyRd9d1
+WLL0U1kLoyjEPdm6DpoTXfQX7xBzKPjQejLkhDacL5J4+LL2Gm2HtNnSl4Vf
+iELM69J2qPZM3tLnJerQX1oozZugDfHPUxGI/4W1HQ5p3TthoyDi4D7lG1v8
+Mi2HgqL9zoEHhB1inOxe3BRG8MH62zXhfIbN1Z82CGhC/GMg4nCm3mN/7TYN
+iHlCUPdGakDc/1kUEr46GhD/eYnD+d9iBf/kC0vC+TuCrSL+X5Vy2HGR4R5T
+uAbEfxYykPBYp+HQqsCuesZAFhL+rJoQ/2rIQdxTpwkJ7yVycPfD+GDzVqLx
+xbUd5HYt2JfqBdWfpA2Jj9mykPDpgYaXtaxDy7yzq86vg8qvlIHE5ylY/Eo7
+XAt7o787TxfOB5ufqesQ9PbyxxkPZSDhZ6nrMAGU3u7LQtLLEx2HN2253UbX
+ofZ76jis/Pay4oynAsT8QG0HKZMv/gW7FCDyTFpwPsz/MD44/Mw1HFjb1uR9
+TVVwWKy880/7FHWIexrkIfLX1RzOMDZZVjHIOaDkh3vSDuj5AwCF11Vc
+                "]]}}, Background -> GrayLevel[0.93], Axes -> False, 
+             AspectRatio -> 1, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}], Frame -> True, FrameTicks -> None, 
+             FrameStyle -> Directive[
+               Thickness[Tiny], 
+               GrayLevel[0.7]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Function name: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"RapierAddColliderCuboid\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Argument count: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["6", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Argument types: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  PaneBox[
+                   RowBox[{"{", 
+                    
+                    RowBox[{
+                    "Integer", ",", "Integer", ",", "Real", ",", "Real", ",", 
+                    "Real", ",", "Real"}], "}"}], 
+                   ImageSize -> {{1, 500}, Automatic}, BaselinePosition -> 
+                   Baseline, ContentPadding -> False, FrameMargins -> 0, 
+                   StripOnInput -> True], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Return type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  PaneBox[
+                  "Integer", ImageSize -> {{1, 500}, Automatic}, 
+                   BaselinePosition -> Baseline, ContentPadding -> False, 
+                   FrameMargins -> 0, StripOnInput -> True], 
+                  "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Library: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"librapier_rs.dylib\"", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  LibraryFunction[
+  "/Users/arnoudb/github/rapier/Rapier/LibraryResources/MacOSX-ARM64/\
+librapier_rs.dylib", "RapierAddColliderCuboid", {
+   Integer, Integer, Real, Real, Real, Real}, Integer],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Echo",
+ CellChangeTimes->{
+  3.983882419183165*^9},ExpressionUUID->"c1418cd5-acfe-455b-ab5d-\
+f20f17442a6d"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["LibraryFunction",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GraphicsBox[{
+              Thickness[0.038461538461538464`], {
+               FaceForm[{
+                 GrayLevel[0.93], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {
+                1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}}}, {{{
+                25.499999999999996`, 2.5}, {25.499999999999996`, 
+                1.3953100000000003`}, {24.604699999999998`, 
+                0.49999999999999994`}, {23.5, 0.49999999999999994`}, {2.5, 
+                0.49999999999999994`}, {1.3953100000000003`, 
+                0.49999999999999994`}, {0.49999999999999994`, 
+                1.3953100000000003`}, {0.49999999999999994`, 2.5}, {
+                0.49999999999999994`, 23.5}, {0.49999999999999994`, 
+                24.604699999999998`}, {1.3953100000000003`, 
+                25.499999999999996`}, {2.5, 25.499999999999996`}, {23.5, 
+                25.499999999999996`}, {24.604699999999998`, 
+                25.499999999999996`}, {25.499999999999996`, 
+                24.604699999999998`}, {25.499999999999996`, 23.5}, {
+                25.499999999999996`, 2.5}}}]}, {
+               FaceForm[{
+                 RGBColor[0.5, 0.5, 0.5], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{20.5426, 
+                19.116799999999998`}, {16.3832, 21.876199999999997`}, {
+                16.3832, 20.021499999999996`}, {6.930469999999999, 
+                20.021499999999996`}, {6.930469999999999, 
+                18.212100000000003`}, {16.3832, 18.212100000000003`}, {
+                16.3832, 16.357399999999995`}, {20.5426, 
+                19.116799999999998`}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{5.30508, 13.8391}, {
+                9.46445, 11.079700000000003`}, {9.46445, 
+                12.933999999999997`}, {18.917199999999998`, 
+                12.933999999999997`}, {18.917199999999998`, 14.7438}, {
+                9.46445, 14.7438}, {9.46445, 16.598}, {5.30508, 13.8391}}}], 
+               
+               FilledCurveBox[{{{1, 4, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {
+                0, 1, 0}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 
+                3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {1,
+                 3, 3}, {1, 3, 3}, {1, 3, 3}}}, CompressedData["
+1:eJxTTMoPSmVmYGBgBGJjIGYCYq4u+eR3VWoOxhkv5j+Qk3SA8fu/r5rKOVHM
+Yd2vmNyjZ9Qcrt9QXbW9S8RBg59767IidQcPMYPGaHFhB+Nn61SfiGo4xBwp
+T7o2V9Dh0Iolfg6/NBxEHv/x1Xgi4FB1XNNqkqQWnP+axUTQjFkbzn+oO2HB
+j/3aDg/Xn5T6WiDoYLs3aJpiqI7DrHN+bO6tQg4zfUR7vF7pQOyfIQyRd9d1
+WLL0U1kLoyjEPdm6DpoTXfQX7xBzKPjQejLkhDacL5J4+LL2Gm2HtNnSl4Vf
+iELM69J2qPZM3tLnJerQX1oozZugDfHPUxGI/4W1HQ5p3TthoyDi4D7lG1v8
+Mi2HgqL9zoEHhB1inOxe3BRG8MH62zXhfIbN1Z82CGhC/GMg4nCm3mN/7TYN
+iHlCUPdGakDc/1kUEr46GhD/eYnD+d9iBf/kC0vC+TuCrSL+X5Vy2HGR4R5T
+uAbEfxYykPBYp+HQqsCuesZAFhL+rJoQ/2rIQdxTpwkJ7yVycPfD+GDzVqLx
+xbUd5HYt2JfqBdWfpA2Jj9mykPDpgYaXtaxDy7yzq86vg8qvlIHE5ylY/Eo7
+XAt7o787TxfOB5ufqesQ9PbyxxkPZSDhZ6nrMAGU3u7LQtLLEx2HN2253UbX
+ofZ76jis/Pay4oynAsT8QG0HKZMv/gW7FCDyTFpwPsz/MD44/Mw1HFjb1uR9
+TVVwWKy880/7FHWIexrkIfLX1RzOMDZZVjHIOaDkh3vSDuj5AwCF11Vc
+                "]]}}, Background -> GrayLevel[0.93], Axes -> False, 
+             AspectRatio -> 1, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}], Frame -> True, FrameTicks -> None, 
+             FrameStyle -> Directive[
+               Thickness[Tiny], 
+               GrayLevel[0.7]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Function name: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"RapierAddColliderSphere\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Argument count: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["4", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GraphicsBox[{
+              Thickness[0.038461538461538464`], {
+               FaceForm[{
+                 GrayLevel[0.93], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {
+                1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}}}, {{{
+                25.499999999999996`, 2.5}, {25.499999999999996`, 
+                1.3953100000000003`}, {24.604699999999998`, 
+                0.49999999999999994`}, {23.5, 0.49999999999999994`}, {2.5, 
+                0.49999999999999994`}, {1.3953100000000003`, 
+                0.49999999999999994`}, {0.49999999999999994`, 
+                1.3953100000000003`}, {0.49999999999999994`, 2.5}, {
+                0.49999999999999994`, 23.5}, {0.49999999999999994`, 
+                24.604699999999998`}, {1.3953100000000003`, 
+                25.499999999999996`}, {2.5, 25.499999999999996`}, {23.5, 
+                25.499999999999996`}, {24.604699999999998`, 
+                25.499999999999996`}, {25.499999999999996`, 
+                24.604699999999998`}, {25.499999999999996`, 23.5}, {
+                25.499999999999996`, 2.5}}}]}, {
+               FaceForm[{
+                 RGBColor[0.5, 0.5, 0.5], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{20.5426, 
+                19.116799999999998`}, {16.3832, 21.876199999999997`}, {
+                16.3832, 20.021499999999996`}, {6.930469999999999, 
+                20.021499999999996`}, {6.930469999999999, 
+                18.212100000000003`}, {16.3832, 18.212100000000003`}, {
+                16.3832, 16.357399999999995`}, {20.5426, 
+                19.116799999999998`}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{5.30508, 13.8391}, {
+                9.46445, 11.079700000000003`}, {9.46445, 
+                12.933999999999997`}, {18.917199999999998`, 
+                12.933999999999997`}, {18.917199999999998`, 14.7438}, {
+                9.46445, 14.7438}, {9.46445, 16.598}, {5.30508, 13.8391}}}], 
+               
+               FilledCurveBox[{{{1, 4, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {
+                0, 1, 0}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 
+                3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {1,
+                 3, 3}, {1, 3, 3}, {1, 3, 3}}}, CompressedData["
+1:eJxTTMoPSmVmYGBgBGJjIGYCYq4u+eR3VWoOxhkv5j+Qk3SA8fu/r5rKOVHM
+Yd2vmNyjZ9Qcrt9QXbW9S8RBg59767IidQcPMYPGaHFhB+Nn61SfiGo4xBwp
+T7o2V9Dh0Iolfg6/NBxEHv/x1Xgi4FB1XNNqkqQWnP+axUTQjFkbzn+oO2HB
+j/3aDg/Xn5T6WiDoYLs3aJpiqI7DrHN+bO6tQg4zfUR7vF7pQOyfIQyRd9d1
+WLL0U1kLoyjEPdm6DpoTXfQX7xBzKPjQejLkhDacL5J4+LL2Gm2HtNnSl4Vf
+iELM69J2qPZM3tLnJerQX1oozZugDfHPUxGI/4W1HQ5p3TthoyDi4D7lG1v8
+Mi2HgqL9zoEHhB1inOxe3BRG8MH62zXhfIbN1Z82CGhC/GMg4nCm3mN/7TYN
+iHlCUPdGakDc/1kUEr46GhD/eYnD+d9iBf/kC0vC+TuCrSL+X5Vy2HGR4R5T
+uAbEfxYykPBYp+HQqsCuesZAFhL+rJoQ/2rIQdxTpwkJ7yVycPfD+GDzVqLx
+xbUd5HYt2JfqBdWfpA2Jj9mykPDpgYaXtaxDy7yzq86vg8qvlIHE5ylY/Eo7
+XAt7o787TxfOB5ufqesQ9PbyxxkPZSDhZ6nrMAGU3u7LQtLLEx2HN2253UbX
+ofZ76jis/Pay4oynAsT8QG0HKZMv/gW7FCDyTFpwPsz/MD44/Mw1HFjb1uR9
+TVVwWKy880/7FHWIexrkIfLX1RzOMDZZVjHIOaDkh3vSDuj5AwCF11Vc
+                "]]}}, Background -> GrayLevel[0.93], Axes -> False, 
+             AspectRatio -> 1, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}], Frame -> True, FrameTicks -> None, 
+             FrameStyle -> Directive[
+               Thickness[Tiny], 
+               GrayLevel[0.7]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Function name: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"RapierAddColliderSphere\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Argument count: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["4", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Argument types: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  PaneBox[
+                   RowBox[{"{", 
+                    
+                    RowBox[{
+                    "Integer", ",", "Integer", ",", "Real", ",", "Real"}], 
+                    "}"}], ImageSize -> {{1, 500}, Automatic}, 
+                   BaselinePosition -> Baseline, ContentPadding -> False, 
+                   FrameMargins -> 0, StripOnInput -> True], 
+                  "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Return type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  PaneBox[
+                  "Integer", ImageSize -> {{1, 500}, Automatic}, 
+                   BaselinePosition -> Baseline, ContentPadding -> False, 
+                   FrameMargins -> 0, StripOnInput -> True], 
+                  "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Library: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"librapier_rs.dylib\"", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  LibraryFunction[
+  "/Users/arnoudb/github/rapier/Rapier/LibraryResources/MacOSX-ARM64/\
+librapier_rs.dylib", "RapierAddColliderSphere", {
+   Integer, Integer, Real, Real}, Integer],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Echo",
+ CellChangeTimes->{
+  3.983882419201211*^9},ExpressionUUID->"3e61b21e-120a-41b7-add1-\
+4fb78e50de0f"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["LibraryFunction",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GraphicsBox[{
+              Thickness[0.038461538461538464`], {
+               FaceForm[{
+                 GrayLevel[0.93], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {
+                1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}}}, {{{
+                25.499999999999996`, 2.5}, {25.499999999999996`, 
+                1.3953100000000003`}, {24.604699999999998`, 
+                0.49999999999999994`}, {23.5, 0.49999999999999994`}, {2.5, 
+                0.49999999999999994`}, {1.3953100000000003`, 
+                0.49999999999999994`}, {0.49999999999999994`, 
+                1.3953100000000003`}, {0.49999999999999994`, 2.5}, {
+                0.49999999999999994`, 23.5}, {0.49999999999999994`, 
+                24.604699999999998`}, {1.3953100000000003`, 
+                25.499999999999996`}, {2.5, 25.499999999999996`}, {23.5, 
+                25.499999999999996`}, {24.604699999999998`, 
+                25.499999999999996`}, {25.499999999999996`, 
+                24.604699999999998`}, {25.499999999999996`, 23.5}, {
+                25.499999999999996`, 2.5}}}]}, {
+               FaceForm[{
+                 RGBColor[0.5, 0.5, 0.5], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{20.5426, 
+                19.116799999999998`}, {16.3832, 21.876199999999997`}, {
+                16.3832, 20.021499999999996`}, {6.930469999999999, 
+                20.021499999999996`}, {6.930469999999999, 
+                18.212100000000003`}, {16.3832, 18.212100000000003`}, {
+                16.3832, 16.357399999999995`}, {20.5426, 
+                19.116799999999998`}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{5.30508, 13.8391}, {
+                9.46445, 11.079700000000003`}, {9.46445, 
+                12.933999999999997`}, {18.917199999999998`, 
+                12.933999999999997`}, {18.917199999999998`, 14.7438}, {
+                9.46445, 14.7438}, {9.46445, 16.598}, {5.30508, 13.8391}}}], 
+               
+               FilledCurveBox[{{{1, 4, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {
+                0, 1, 0}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 
+                3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {1,
+                 3, 3}, {1, 3, 3}, {1, 3, 3}}}, CompressedData["
+1:eJxTTMoPSmVmYGBgBGJjIGYCYq4u+eR3VWoOxhkv5j+Qk3SA8fu/r5rKOVHM
+Yd2vmNyjZ9Qcrt9QXbW9S8RBg59767IidQcPMYPGaHFhB+Nn61SfiGo4xBwp
+T7o2V9Dh0Iolfg6/NBxEHv/x1Xgi4FB1XNNqkqQWnP+axUTQjFkbzn+oO2HB
+j/3aDg/Xn5T6WiDoYLs3aJpiqI7DrHN+bO6tQg4zfUR7vF7pQOyfIQyRd9d1
+WLL0U1kLoyjEPdm6DpoTXfQX7xBzKPjQejLkhDacL5J4+LL2Gm2HtNnSl4Vf
+iELM69J2qPZM3tLnJerQX1oozZugDfHPUxGI/4W1HQ5p3TthoyDi4D7lG1v8
+Mi2HgqL9zoEHhB1inOxe3BRG8MH62zXhfIbN1Z82CGhC/GMg4nCm3mN/7TYN
+iHlCUPdGakDc/1kUEr46GhD/eYnD+d9iBf/kC0vC+TuCrSL+X5Vy2HGR4R5T
+uAbEfxYykPBYp+HQqsCuesZAFhL+rJoQ/2rIQdxTpwkJ7yVycPfD+GDzVqLx
+xbUd5HYt2JfqBdWfpA2Jj9mykPDpgYaXtaxDy7yzq86vg8qvlIHE5ylY/Eo7
+XAt7o787TxfOB5ufqesQ9PbyxxkPZSDhZ6nrMAGU3u7LQtLLEx2HN2253UbX
+ofZ76jis/Pay4oynAsT8QG0HKZMv/gW7FCDyTFpwPsz/MD44/Mw1HFjb1uR9
+TVVwWKy880/7FHWIexrkIfLX1RzOMDZZVjHIOaDkh3vSDuj5AwCF11Vc
+                "]]}}, Background -> GrayLevel[0.93], Axes -> False, 
+             AspectRatio -> 1, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}], Frame -> True, FrameTicks -> None, 
+             FrameStyle -> Directive[
+               Thickness[Tiny], 
+               GrayLevel[0.7]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Function name: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"RapierWorldStep\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Argument count: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["3", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GraphicsBox[{
+              Thickness[0.038461538461538464`], {
+               FaceForm[{
+                 GrayLevel[0.93], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {
+                1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}}}, {{{
+                25.499999999999996`, 2.5}, {25.499999999999996`, 
+                1.3953100000000003`}, {24.604699999999998`, 
+                0.49999999999999994`}, {23.5, 0.49999999999999994`}, {2.5, 
+                0.49999999999999994`}, {1.3953100000000003`, 
+                0.49999999999999994`}, {0.49999999999999994`, 
+                1.3953100000000003`}, {0.49999999999999994`, 2.5}, {
+                0.49999999999999994`, 23.5}, {0.49999999999999994`, 
+                24.604699999999998`}, {1.3953100000000003`, 
+                25.499999999999996`}, {2.5, 25.499999999999996`}, {23.5, 
+                25.499999999999996`}, {24.604699999999998`, 
+                25.499999999999996`}, {25.499999999999996`, 
+                24.604699999999998`}, {25.499999999999996`, 23.5}, {
+                25.499999999999996`, 2.5}}}]}, {
+               FaceForm[{
+                 RGBColor[0.5, 0.5, 0.5], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{20.5426, 
+                19.116799999999998`}, {16.3832, 21.876199999999997`}, {
+                16.3832, 20.021499999999996`}, {6.930469999999999, 
+                20.021499999999996`}, {6.930469999999999, 
+                18.212100000000003`}, {16.3832, 18.212100000000003`}, {
+                16.3832, 16.357399999999995`}, {20.5426, 
+                19.116799999999998`}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{5.30508, 13.8391}, {
+                9.46445, 11.079700000000003`}, {9.46445, 
+                12.933999999999997`}, {18.917199999999998`, 
+                12.933999999999997`}, {18.917199999999998`, 14.7438}, {
+                9.46445, 14.7438}, {9.46445, 16.598}, {5.30508, 13.8391}}}], 
+               
+               FilledCurveBox[{{{1, 4, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {
+                0, 1, 0}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 
+                3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {1,
+                 3, 3}, {1, 3, 3}, {1, 3, 3}}}, CompressedData["
+1:eJxTTMoPSmVmYGBgBGJjIGYCYq4u+eR3VWoOxhkv5j+Qk3SA8fu/r5rKOVHM
+Yd2vmNyjZ9Qcrt9QXbW9S8RBg59767IidQcPMYPGaHFhB+Nn61SfiGo4xBwp
+T7o2V9Dh0Iolfg6/NBxEHv/x1Xgi4FB1XNNqkqQWnP+axUTQjFkbzn+oO2HB
+j/3aDg/Xn5T6WiDoYLs3aJpiqI7DrHN+bO6tQg4zfUR7vF7pQOyfIQyRd9d1
+WLL0U1kLoyjEPdm6DpoTXfQX7xBzKPjQejLkhDacL5J4+LL2Gm2HtNnSl4Vf
+iELM69J2qPZM3tLnJerQX1oozZugDfHPUxGI/4W1HQ5p3TthoyDi4D7lG1v8
+Mi2HgqL9zoEHhB1inOxe3BRG8MH62zXhfIbN1Z82CGhC/GMg4nCm3mN/7TYN
+iHlCUPdGakDc/1kUEr46GhD/eYnD+d9iBf/kC0vC+TuCrSL+X5Vy2HGR4R5T
+uAbEfxYykPBYp+HQqsCuesZAFhL+rJoQ/2rIQdxTpwkJ7yVycPfD+GDzVqLx
+xbUd5HYt2JfqBdWfpA2Jj9mykPDpgYaXtaxDy7yzq86vg8qvlIHE5ylY/Eo7
+XAt7o787TxfOB5ufqesQ9PbyxxkPZSDhZ6nrMAGU3u7LQtLLEx2HN2253UbX
+ofZ76jis/Pay4oynAsT8QG0HKZMv/gW7FCDyTFpwPsz/MD44/Mw1HFjb1uR9
+TVVwWKy880/7FHWIexrkIfLX1RzOMDZZVjHIOaDkh3vSDuj5AwCF11Vc
+                "]]}}, Background -> GrayLevel[0.93], Axes -> False, 
+             AspectRatio -> 1, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}], Frame -> True, FrameTicks -> None, 
+             FrameStyle -> Directive[
+               Thickness[Tiny], 
+               GrayLevel[0.7]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Function name: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"RapierWorldStep\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Argument count: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["3", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Argument types: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  PaneBox[
+                   RowBox[{"{", 
+                    RowBox[{"Integer", ",", "Integer", ",", "Real"}], "}"}], 
+                   ImageSize -> {{1, 500}, Automatic}, BaselinePosition -> 
+                   Baseline, ContentPadding -> False, FrameMargins -> 0, 
+                   StripOnInput -> True], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Return type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  PaneBox[
+                   RowBox[{"{", "}"}], ImageSize -> {{1, 500}, Automatic}, 
+                   BaselinePosition -> Baseline, ContentPadding -> False, 
+                   FrameMargins -> 0, StripOnInput -> True], 
+                  "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Library: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"librapier_rs.dylib\"", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  LibraryFunction[
+  "/Users/arnoudb/github/rapier/Rapier/LibraryResources/MacOSX-ARM64/\
+librapier_rs.dylib", "RapierWorldStep", {Integer, Integer, Real}, {}],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Echo",
+ CellChangeTimes->{
+  3.9838824192086363`*^9},ExpressionUUID->"115dc930-4b91-42c5-a727-\
+1c122396498f"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["LibraryFunction",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GraphicsBox[{
+              Thickness[0.038461538461538464`], {
+               FaceForm[{
+                 GrayLevel[0.93], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {
+                1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}}}, {{{
+                25.499999999999996`, 2.5}, {25.499999999999996`, 
+                1.3953100000000003`}, {24.604699999999998`, 
+                0.49999999999999994`}, {23.5, 0.49999999999999994`}, {2.5, 
+                0.49999999999999994`}, {1.3953100000000003`, 
+                0.49999999999999994`}, {0.49999999999999994`, 
+                1.3953100000000003`}, {0.49999999999999994`, 2.5}, {
+                0.49999999999999994`, 23.5}, {0.49999999999999994`, 
+                24.604699999999998`}, {1.3953100000000003`, 
+                25.499999999999996`}, {2.5, 25.499999999999996`}, {23.5, 
+                25.499999999999996`}, {24.604699999999998`, 
+                25.499999999999996`}, {25.499999999999996`, 
+                24.604699999999998`}, {25.499999999999996`, 23.5}, {
+                25.499999999999996`, 2.5}}}]}, {
+               FaceForm[{
+                 RGBColor[0.5, 0.5, 0.5], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{20.5426, 
+                19.116799999999998`}, {16.3832, 21.876199999999997`}, {
+                16.3832, 20.021499999999996`}, {6.930469999999999, 
+                20.021499999999996`}, {6.930469999999999, 
+                18.212100000000003`}, {16.3832, 18.212100000000003`}, {
+                16.3832, 16.357399999999995`}, {20.5426, 
+                19.116799999999998`}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{5.30508, 13.8391}, {
+                9.46445, 11.079700000000003`}, {9.46445, 
+                12.933999999999997`}, {18.917199999999998`, 
+                12.933999999999997`}, {18.917199999999998`, 14.7438}, {
+                9.46445, 14.7438}, {9.46445, 16.598}, {5.30508, 13.8391}}}], 
+               
+               FilledCurveBox[{{{1, 4, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {
+                0, 1, 0}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 
+                3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {1,
+                 3, 3}, {1, 3, 3}, {1, 3, 3}}}, CompressedData["
+1:eJxTTMoPSmVmYGBgBGJjIGYCYq4u+eR3VWoOxhkv5j+Qk3SA8fu/r5rKOVHM
+Yd2vmNyjZ9Qcrt9QXbW9S8RBg59767IidQcPMYPGaHFhB+Nn61SfiGo4xBwp
+T7o2V9Dh0Iolfg6/NBxEHv/x1Xgi4FB1XNNqkqQWnP+axUTQjFkbzn+oO2HB
+j/3aDg/Xn5T6WiDoYLs3aJpiqI7DrHN+bO6tQg4zfUR7vF7pQOyfIQyRd9d1
+WLL0U1kLoyjEPdm6DpoTXfQX7xBzKPjQejLkhDacL5J4+LL2Gm2HtNnSl4Vf
+iELM69J2qPZM3tLnJerQX1oozZugDfHPUxGI/4W1HQ5p3TthoyDi4D7lG1v8
+Mi2HgqL9zoEHhB1inOxe3BRG8MH62zXhfIbN1Z82CGhC/GMg4nCm3mN/7TYN
+iHlCUPdGakDc/1kUEr46GhD/eYnD+d9iBf/kC0vC+TuCrSL+X5Vy2HGR4R5T
+uAbEfxYykPBYp+HQqsCuesZAFhL+rJoQ/2rIQdxTpwkJ7yVycPfD+GDzVqLx
+xbUd5HYt2JfqBdWfpA2Jj9mykPDpgYaXtaxDy7yzq86vg8qvlIHE5ylY/Eo7
+XAt7o787TxfOB5ufqesQ9PbyxxkPZSDhZ6nrMAGU3u7LQtLLEx2HN2253UbX
+ofZ76jis/Pay4oynAsT8QG0HKZMv/gW7FCDyTFpwPsz/MD44/Mw1HFjb1uR9
+TVVwWKy880/7FHWIexrkIfLX1RzOMDZZVjHIOaDkh3vSDuj5AwCF11Vc
+                "]]}}, Background -> GrayLevel[0.93], Axes -> False, 
+             AspectRatio -> 1, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}], Frame -> True, FrameTicks -> None, 
+             FrameStyle -> Directive[
+               Thickness[Tiny], 
+               GrayLevel[0.7]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Function name: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"RapierGetBodyPositions\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Argument count: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["1", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GraphicsBox[{
+              Thickness[0.038461538461538464`], {
+               FaceForm[{
+                 GrayLevel[0.93], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {
+                1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}}}, {{{
+                25.499999999999996`, 2.5}, {25.499999999999996`, 
+                1.3953100000000003`}, {24.604699999999998`, 
+                0.49999999999999994`}, {23.5, 0.49999999999999994`}, {2.5, 
+                0.49999999999999994`}, {1.3953100000000003`, 
+                0.49999999999999994`}, {0.49999999999999994`, 
+                1.3953100000000003`}, {0.49999999999999994`, 2.5}, {
+                0.49999999999999994`, 23.5}, {0.49999999999999994`, 
+                24.604699999999998`}, {1.3953100000000003`, 
+                25.499999999999996`}, {2.5, 25.499999999999996`}, {23.5, 
+                25.499999999999996`}, {24.604699999999998`, 
+                25.499999999999996`}, {25.499999999999996`, 
+                24.604699999999998`}, {25.499999999999996`, 23.5}, {
+                25.499999999999996`, 2.5}}}]}, {
+               FaceForm[{
+                 RGBColor[0.5, 0.5, 0.5], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{20.5426, 
+                19.116799999999998`}, {16.3832, 21.876199999999997`}, {
+                16.3832, 20.021499999999996`}, {6.930469999999999, 
+                20.021499999999996`}, {6.930469999999999, 
+                18.212100000000003`}, {16.3832, 18.212100000000003`}, {
+                16.3832, 16.357399999999995`}, {20.5426, 
+                19.116799999999998`}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{5.30508, 13.8391}, {
+                9.46445, 11.079700000000003`}, {9.46445, 
+                12.933999999999997`}, {18.917199999999998`, 
+                12.933999999999997`}, {18.917199999999998`, 14.7438}, {
+                9.46445, 14.7438}, {9.46445, 16.598}, {5.30508, 13.8391}}}], 
+               
+               FilledCurveBox[{{{1, 4, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {
+                0, 1, 0}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 
+                3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {1,
+                 3, 3}, {1, 3, 3}, {1, 3, 3}}}, CompressedData["
+1:eJxTTMoPSmVmYGBgBGJjIGYCYq4u+eR3VWoOxhkv5j+Qk3SA8fu/r5rKOVHM
+Yd2vmNyjZ9Qcrt9QXbW9S8RBg59767IidQcPMYPGaHFhB+Nn61SfiGo4xBwp
+T7o2V9Dh0Iolfg6/NBxEHv/x1Xgi4FB1XNNqkqQWnP+axUTQjFkbzn+oO2HB
+j/3aDg/Xn5T6WiDoYLs3aJpiqI7DrHN+bO6tQg4zfUR7vF7pQOyfIQyRd9d1
+WLL0U1kLoyjEPdm6DpoTXfQX7xBzKPjQejLkhDacL5J4+LL2Gm2HtNnSl4Vf
+iELM69J2qPZM3tLnJerQX1oozZugDfHPUxGI/4W1HQ5p3TthoyDi4D7lG1v8
+Mi2HgqL9zoEHhB1inOxe3BRG8MH62zXhfIbN1Z82CGhC/GMg4nCm3mN/7TYN
+iHlCUPdGakDc/1kUEr46GhD/eYnD+d9iBf/kC0vC+TuCrSL+X5Vy2HGR4R5T
+uAbEfxYykPBYp+HQqsCuesZAFhL+rJoQ/2rIQdxTpwkJ7yVycPfD+GDzVqLx
+xbUd5HYt2JfqBdWfpA2Jj9mykPDpgYaXtaxDy7yzq86vg8qvlIHE5ylY/Eo7
+XAt7o787TxfOB5ufqesQ9PbyxxkPZSDhZ6nrMAGU3u7LQtLLEx2HN2253UbX
+ofZ76jis/Pay4oynAsT8QG0HKZMv/gW7FCDyTFpwPsz/MD44/Mw1HFjb1uR9
+TVVwWKy880/7FHWIexrkIfLX1RzOMDZZVjHIOaDkh3vSDuj5AwCF11Vc
+                "]]}}, Background -> GrayLevel[0.93], Axes -> False, 
+             AspectRatio -> 1, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}], Frame -> True, FrameTicks -> None, 
+             FrameStyle -> Directive[
+               Thickness[Tiny], 
+               GrayLevel[0.7]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Function name: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"RapierGetBodyPositions\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Argument count: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["1", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Argument types: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  PaneBox[
+                   RowBox[{"{", "Integer", "}"}], 
+                   ImageSize -> {{1, 500}, Automatic}, BaselinePosition -> 
+                   Baseline, ContentPadding -> False, FrameMargins -> 0, 
+                   StripOnInput -> True], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Return type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  PaneBox[
+                   RowBox[{"{", 
+                    RowBox[{"Real", ",", "1"}], "}"}], 
+                   ImageSize -> {{1, 500}, Automatic}, BaselinePosition -> 
+                   Baseline, ContentPadding -> False, FrameMargins -> 0, 
+                   StripOnInput -> True], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Library: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"librapier_rs.dylib\"", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  LibraryFunction[
+  "/Users/arnoudb/github/rapier/Rapier/LibraryResources/MacOSX-ARM64/\
+librapier_rs.dylib", "RapierGetBodyPositions", {Integer}, {Real, 1}],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Echo",
+ CellChangeTimes->{
+  3.983882419227187*^9},ExpressionUUID->"c9992ba4-edfe-4bc8-a814-\
+750ddc7ed336"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"RapierVersion", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.9838796934423*^9, 3.983879695732378*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"84aef4b0-460a-4dfc-8518-3c8cefb6fe2a"],
+
+Cell[BoxData["\<\"0.23.0\"\>"], "Output",
+ CellChangeTimes->{
+  3.983879696075264*^9, 3.9838811516705933`*^9, {3.983881589080266*^9, 
+   3.98388161640725*^9}, 3.983882420245923*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"6fc22e30-4024-4563-be1b-77425c2565e8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"worldId", "=", 
+  RowBox[{"RapierWorldCreate", "[", 
+   RowBox[{"{", 
+    RowBox[{"0.0", ",", "0.0", ",", 
+     RowBox[{"-", "9.81"}]}], "}"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.983881138246234*^9, 3.983881157978127*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"97f80edb-ab6c-4f79-a75c-f25bec09258e"],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{
+  3.983881158396455*^9, {3.983881589834997*^9, 3.983881617487267*^9}, 
+   3.983882421035918*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"53fb64b5-2c1e-460c-9571-3123467c0d58"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"floorId", "=", 
+  RowBox[{"RapierAddRigidBody", "[", 
+   RowBox[{"worldId", ",", 
+    RowBox[{"{", 
+     RowBox[{"0.0", ",", "0.0", ",", 
+      RowBox[{"-", "1.0"}]}], "}"}], ",", "\"\<Fixed\>\""}], "]"}]}]], "Input",\
+
+ CellChangeTimes->{{3.983881169384831*^9, 3.9838811744724817`*^9}, 
+   3.9838816209029503`*^9},
+ CellLabel->"In[5]:=",ExpressionUUID->"4c76b34d-9e0b-4de8-ba54-0e4a2a891c6b"],
+
+Cell[BoxData["0"], "Output",
+ CellChangeTimes->{3.983881622192923*^9, 3.98388242203967*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"0cef2f9b-9537-4a4d-87de-abe591813e5a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"RapierAddColliderCuboid", "[", 
+  RowBox[{"worldId", ",", "floorId", ",", 
+   RowBox[{"{", 
+    RowBox[{"10.0", ",", "10.0", ",", "1.0"}], "}"}], ",", "1.0"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.983881169384831*^9, 3.9838811744724817`*^9}, 
+   3.9838816209029503`*^9},
+ CellLabel->"In[6]:=",ExpressionUUID->"5cd52b95-35be-4fde-b96e-9dc0f666f362"],
+
+Cell[BoxData["0"], "Output",
+ CellChangeTimes->{
+  3.983881174861889*^9, {3.983881592120219*^9, 3.983881623508429*^9}, 
+   3.983882423629507*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"7591cf7a-de26-4f77-ba45-ec5900eb4265"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"ballId", "=", 
+  RowBox[{"RapierAddRigidBody", "[", 
+   RowBox[{"worldId", ",", 
+    RowBox[{"{", 
+     RowBox[{"0.0", ",", "0.0", ",", "5.0"}], "}"}], ",", "\"\<Dynamic\>\""}],
+    "]"}]}], "\n", 
+ RowBox[{"RapierAddColliderSphere", "[", 
+  RowBox[{"worldId", ",", "ballId", ",", "0.5", ",", "1.0"}], "]"}]}], "Input",\
+
+ CellChangeTimes->{{3.983881182402384*^9, 3.983881184800713*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"5a210079-d80b-4d87-b1a3-66a4199ed317"],
+
+Cell[BoxData["4294967296"], "Output",
+ CellChangeTimes->{3.983881185196027*^9, 3.9838824261717157`*^9},
+ CellLabel->"Out[7]=",ExpressionUUID->"52cf72a1-5e62-4f17-8b8c-a80f5f61f03a"],
+
+Cell[BoxData["4294967296"], "Output",
+ CellChangeTimes->{3.983881185196027*^9, 3.983882426172858*^9},
+ CellLabel->"Out[8]=",ExpressionUUID->"7d095806-3dea-4808-a221-832d7fec47b8"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"frames", "=", 
+   RowBox[{"Table", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"RapierWorldStep", "[", 
+       RowBox[{"worldId", ",", "1", ",", 
+        RowBox[{"1.0", "/", "60.0"}]}], "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"RapierGetBodyPositions", "[", "worldId", "]"}]}], ",", 
+     RowBox[{"{", "200", "}"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.983881198773567*^9, 3.983881209261322*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"a0e25ed1-86df-4505-a1cd-64d238e4eddc"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"list", "=", 
+   RowBox[{"Table", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Graphics3D", "[", 
+      RowBox[{
+       RowBox[{"{", "\[IndentingNewLine]", 
+        RowBox[{"(*", 
+         RowBox[{"Visualization", " ", "for", " ", "Floor", " ", "Bounds"}], 
+         "*)"}], "\[IndentingNewLine]", 
+        RowBox[{"Gray", ",", "\[IndentingNewLine]", 
+         RowBox[{"Cuboid", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "10"}], ",", 
+             RowBox[{"-", "10"}], ",", 
+             RowBox[{"-", "2"}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"10", ",", "10", ",", "0"}], "}"}]}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"(*", 
+          RowBox[{
+          "Translate", " ", "Sphere", " ", "object", " ", "into", " ", 
+           "dynamic", " ", "coordinates", " ", "logged", " ", "at", " ", 
+           "this", " ", "step"}], "*)"}], "\[IndentingNewLine]", "Red", ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"Translate", "[", 
+          RowBox[{
+           RowBox[{"Sphere", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", "0.5"}], "]"}], ",", 
+           RowBox[{"pos", "[", 
+            RowBox[{"[", 
+             RowBox[{"2", ",", 
+              RowBox[{"2", ";;", "4"}]}], "]"}], "]"}]}], "]"}]}], 
+        "\[IndentingNewLine]", "}"}], ",", 
+       RowBox[{"Axes", "->", "True"}], ",", 
+       RowBox[{"ViewPoint", "->", "Front"}], ",", 
+       RowBox[{"PlotRange", "->", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "2"}], ",", "6"}], "}"}]}], "}"}]}]}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"pos", ",", "frames"}], "}"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.983881218141335*^9, 3.983881218141424*^9}, {
+  3.9838812564907293`*^9, 3.983881297315976*^9}, {3.983881340948214*^9, 
+  3.983881414091365*^9}},
+ CellLabel->"In[10]:=",ExpressionUUID->"c73e10cc-54de-49a7-abc7-dd3293a4ca9f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ListAnimate", "[", "list", "]"}]], "Input",
+ CellChangeTimes->{{3.983881300028813*^9, 3.983881311427434*^9}, {
+  3.9838814201020927`*^9, 3.983881422103668*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"4a0bce5a-6847-40dd-b58c-bad6fa28e756"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{Manipulate`Dump`i$5623$$ = 125, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {
+    "\"min\"" :> {Manipulate`Dump`i$5623$$ = 1}, 
+     "\"max\"" :> {Manipulate`Dump`i$5623$$ = 200}}, Typeset`bookmarkMode$$ = 
+    "Menu", Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[Manipulate`Dump`i$5623$$], 1, ""}, 1, 200, 1, ControlType -> 
+      Animator}}, Typeset`size$$ = Automatic, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = True, 
+    Typeset`keyframeActionsQ$$ = False, Typeset`keyframeList$$ = {}}, 
+    PaneBox[
+     PanelBox[GridBox[{
+        {
+         ItemBox[
+          ItemBox[
+           TagBox[
+            StyleBox[GridBox[{
+               {"\<\"\"\>", 
+                AnimatorBox[Dynamic[Manipulate`Dump`i$5623$$], {1, 200, 1},
+                 AnimationRate->Automatic,
+                 AnimationRunTime->3.7811012268066406`,
+                 AnimationRunning->False,
+                 AnimationTimeIndex->3.124999999999993,
+                 
+                 AppearanceElements->{
+                  "ProgressSlider", "PlayPauseButton", "FasterSlowerButtons", 
+                   "DirectionButton"},
+                 AutoAction->False,
+                 DisplayAllSteps->True]}
+              },
+              AutoDelete->False,
+              
+              GridBoxAlignment->{
+               "Columns" -> {Right, {Left}}, "Rows" -> {{Baseline}}},
+              
+              GridBoxItemSize->{
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+             "ListAnimateLabel",
+             StripOnInput->False],
+            {"ControlArea", Top}],
+           Alignment->{Automatic, Inherited},
+           StripOnInput->False],
+          Background->None,
+          StripOnInput->False]},
+        {
+         ItemBox[
+          TagBox[
+           StyleBox[
+            PaneBox[
+             TagBox[
+              PaneSelectorBox[{1->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 4.998296737670898}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 2->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 4.993868827819824}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 3->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 4.986715316772461}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 4->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 4.976837158203125}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 5->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 4.964234352111816}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 6->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 4.948905944824219}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 7->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 4.930852890014648}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 8->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 4.9100751876831055`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 9->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 4.886571884155273}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 10->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 4.8603434562683105`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 11->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 4.831390380859375}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 12->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 4.799712181091309}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 13->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 4.765308856964111}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 14->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 4.728180885314941}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 15->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 4.688327789306641}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 16->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 4.645749568939209}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 17->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 4.600446701049805}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 18->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 4.5524187088012695`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 19->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 4.5016655921936035`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 20->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 4.448187351226807}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 21->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 4.391984462738037}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 22->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 4.3330559730529785`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 23->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 4.271402835845947}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 24->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 4.207025051116943}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 25->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 4.13992166519165}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 26->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 4.070093631744385}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 27->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 3.9975407123565674`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 28->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 3.922262668609619}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 29->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 3.84425950050354}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 30->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 3.763531446456909}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 31->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 3.6800785064697266`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 32->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 3.593900442123413}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 33->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 3.504997491836548}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 34->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 3.413369655609131}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 35->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 3.319016456604004}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 36->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 3.221938371658325}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 37->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 3.1221351623535156`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 38->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 3.0196070671081543`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 39->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 2.914354085922241}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 40->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 2.8063759803771973`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 41->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 2.6956729888916016`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 42->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 2.582245111465454}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 43->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 2.466092109680176}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 44->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 2.3472142219543457`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 45->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 2.2256109714508057`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 46->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 2.101282835006714}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 47->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 1.9742296934127808`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 48->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 1.844451665878296}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 49->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 1.7119486331939697`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 50->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 1.5767205953598022`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 51->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 1.4387675523757935`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 52->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 1.2980895042419434`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 53->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 1.1546863317489624`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 54->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 1.0085581541061401`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 55->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.8597049713134766}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 56->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.7081267833709717}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 57->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.5538235306739807}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 58->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.39679527282714844`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 59->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.41745802760124207`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 60->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.4366498291492462}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 61->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.45130929350852966`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 62->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.4625067412853241}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 63->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.4710598289966583}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 64->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.47759300470352173`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 65->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.48258331418037415`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 66->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.48639506101608276`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 67->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.48930665850639343`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 68->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.4915306270122528}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 69->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.4932294189929962}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 70->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49452701210975647`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 71->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49551814794540405`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 72->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.4962752163410187}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 73->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49685347080230713`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 74->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49729520082473755`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 75->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49763259291648865`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 76->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49789032340049744`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 77->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49808716773986816`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 78->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.4982375502586365}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 79->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49835240840911865`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 80->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.498440146446228}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 81->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49850717186927795`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 82->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49855837225914}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 83->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49859747290611267`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 84->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49862733483314514`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 85->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49865010380744934`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 86->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49866753816604614`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 87->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49868085980415344`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 88->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49869102239608765`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 89->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49869880080223083`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 90->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.498704731464386}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 91->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.4987092614173889}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 92->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.4987127184867859}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 93->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.498715341091156}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 94->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.498717337846756}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 95->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49871888756752014`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 96->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872007966041565`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 97->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.4987209737300873}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 98->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.4987216591835022}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 99->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.4987221956253052}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 100->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.4987225830554962}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 101->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.4987228810787201}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 102->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.4987231194972992}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 103->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.4987232983112335}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 104->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872341752052307`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 105->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.4987235367298126}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 106->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.4987236559391022}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 107->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 108->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 109->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 110->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 111->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 112->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 113->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 114->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 115->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 116->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 117->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 118->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 119->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 120->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 121->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 122->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 123->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 124->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 125->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 126->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 127->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 128->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 129->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 130->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 131->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 132->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 133->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 134->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 135->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 136->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 137->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 138->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 139->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 140->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 141->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 142->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 143->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 144->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 145->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 146->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 147->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 148->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 149->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 150->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 151->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 152->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 153->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 154->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 155->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 156->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 157->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 158->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 159->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 160->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 161->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 162->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 163->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 164->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 165->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 166->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 167->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 168->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 169->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 170->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 171->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 172->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 173->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 174->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 175->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 176->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 177->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 178->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 179->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 180->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 181->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 182->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 183->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 184->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 185->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 186->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 187->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 188->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 189->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 190->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 191->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 192->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 193->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 194->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 195->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 196->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 197->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 198->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 199->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front], 200->
+               Graphics3DBox[{
+                 {GrayLevel[0.5], CuboidBox[{-10, -10, -2}, {10, 10, 0}]}, 
+                 {RGBColor[1, 0, 0], 
+                  GeometricTransformation3DBox[SphereBox[{0, 0, 0}, 0.5], {0.,
+                    0., 0.49872368574142456`}]}},
+                Axes->True,
+                PlotRange->{{-10, 10}, {-10, 10}, {-2, 6}},
+                ViewPoint->Front]}, Dynamic[Manipulate`Dump`i$5623$$],
+               Alignment->Automatic,
+               BaseStyle->"ListAnimateCore",
+               ImageSize->All,
+               TransitionDirection->Horizontal,
+               TransitionDuration->0.5,
+               TransitionEffect->Automatic],
+              Identity,
+              Editable->True,
+              Selectable->True],
+             ImageMargins->10],
+            Deployed->False,
+            StripOnInput->False,
+            ScriptLevel->0,
+            GraphicsBoxOptions->{PreserveImageOptions->True},
+            Graphics3DBoxOptions->{PreserveImageOptions->True}],
+           Identity,
+           Editable->False,
+           Selectable->False],
+          Alignment->{Left, Center},
+          Background->ThemeColor["Background"],
+          Frame->1,
+          FrameStyle->Directive[
+            Opacity[0.2], 
+            ThemeColor["Foreground"]],
+          ItemSize->Automatic,
+          StripOnInput->False]}
+       },
+       AutoDelete->False,
+       GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Top}}},
+       GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+       GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+       
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.7], {
+            Offset[0.5599999999999999]}, 
+           Offset[0.7]}, "Rows" -> {
+           Offset[0.4], {
+            Offset[0.8]}, 
+           Offset[0.4]}}],
+      DefaultBaseStyle->{},
+      FrameMargins->{{5, 5}, {5, 5}}],
+     BaselinePosition->Automatic,
+     ImageMargins->0],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "ListAnimate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.983881303475284*^9, 3.9838813117854013`*^9}, {
+   3.983881342707485*^9, 3.983881374592671*^9}, {3.983881415270885*^9, 
+   3.9838814224243298`*^9}, 3.98388243344763*^9},
+ CellLabel->"Out[11]=",ExpressionUUID->"25800e34-b14b-4af6-8072-e0c9f29c4115"]
+}, Open  ]]
+},
+WindowSize->{1470, 894},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"15.0 for Mac OS X ARM (64-bit) (March 27, 2026)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"f396870e-6023-4d33-b371-66ddd3d6a6a7"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[554, 20, 175, 2, 29, "Input",ExpressionUUID->"fecf55a1-1273-4726-925f-41a1d50f2b1c"],
+Cell[732, 24, 309, 7, 29, "Input",ExpressionUUID->"4fde9040-4853-4229-88f3-bd91530b3592"],
+Cell[CellGroupData[{
+Cell[1066, 35, 259, 5, 29, "Input",ExpressionUUID->"3ed5b1e0-1142-4583-b50e-8b891dd35bf3"],
+Cell[CellGroupData[{
+Cell[1350, 44, 12694, 243, 47, "Echo",ExpressionUUID->"abdae004-e033-4db2-89a4-89ea65240fbb"],
+Cell[14047, 289, 12679, 243, 47, "Echo",ExpressionUUID->"91093282-1f2a-4783-bcb8-4b249cfa8188"],
+Cell[26729, 534, 12912, 248, 47, "Echo",ExpressionUUID->"ddaf2da8-93f8-471d-98b0-afd67bc9b820"],
+Cell[39644, 784, 12848, 247, 47, "Echo",ExpressionUUID->"c1418cd5-acfe-455b-ab5d-f20f17442a6d"],
+Cell[52495, 1033, 12809, 247, 47, "Echo",ExpressionUUID->"3e61b21e-120a-41b7-add1-4fb78e50de0f"],
+Cell[65307, 1282, 12707, 243, 47, "Echo",ExpressionUUID->"115dc930-4b91-42c5-a727-1c122396498f"],
+Cell[78017, 1527, 12708, 243, 47, "Echo",ExpressionUUID->"c9992ba4-edfe-4bc8-a814-750ddc7ed336"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[90774, 1776, 203, 3, 29, "Input",ExpressionUUID->"84aef4b0-460a-4dfc-8518-3c8cefb6fe2a"],
+Cell[90980, 1781, 259, 4, 33, "Output",ExpressionUUID->"6fc22e30-4024-4563-be1b-77425c2565e8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[91276, 1790, 330, 7, 29, "Input",ExpressionUUID->"97f80edb-ab6c-4f79-a75c-f25bec09258e"],
+Cell[91609, 1799, 223, 4, 33, "Output",ExpressionUUID->"53fb64b5-2c1e-460c-9571-3123467c0d58"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[91869, 1808, 417, 10, 29, "Input",ExpressionUUID->"4c76b34d-9e0b-4de8-ba54-0e4a2a891c6b"],
+Cell[92289, 1820, 169, 2, 33, "Output",ExpressionUUID->"0cef2f9b-9537-4a4d-87de-abe591813e5a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[92495, 1827, 377, 8, 29, "Input",ExpressionUUID->"5cd52b95-35be-4fde-b96e-9dc0f666f362"],
+Cell[92875, 1837, 223, 4, 33, "Output",ExpressionUUID->"7591cf7a-de26-4f77-ba45-ec5900eb4265"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[93135, 1846, 490, 11, 49, "Input",ExpressionUUID->"5a210079-d80b-4d87-b1a3-66a4199ed317"],
+Cell[93628, 1859, 181, 2, 33, "Output",ExpressionUUID->"52cf72a1-5e62-4f17-8b8c-a80f5f61f03a"],
+Cell[93812, 1863, 179, 2, 33, "Output",ExpressionUUID->"7d095806-3dea-4808-a221-832d7fec47b8"]
+}, Open  ]],
+Cell[94006, 1868, 557, 12, 70, "Input",ExpressionUUID->"a0e25ed1-86df-4505-a1cd-64d238e4eddc"],
+Cell[94566, 1882, 2309, 58, 192, "Input",ExpressionUUID->"c73e10cc-54de-49a7-abc7-dd3293a4ca9f"],
+Cell[CellGroupData[{
+Cell[96900, 1944, 263, 4, 29, "Input",ExpressionUUID->"4a0bce5a-6847-40dd-b58c-bad6fa28e756"],
+Cell[97166, 1950, 84529, 1709, 246, "Output",ExpressionUUID->"25800e34-b14b-4af6-8072-e0c9f29c4115"]
+}, Open  ]]
+}
+]
+*)
+
