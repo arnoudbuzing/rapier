@@ -1,0 +1,5 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/Applications/Wolfram/15.0/Wolfram.app/Contents/MacOS/wolfram": true
+    }
+}

@@ -200,6 +200,39 @@ fn rapier_add_collider_sphere(
 }
 
 #[wll::export]
+fn rapier_add_collider_cylinder(
+    world_id: i64,
+    body_handle_raw: i64,
+    half_height: f64,
+    radius: f64,
+    density: f64
+) -> i64 {
+    WORLDS.with(|w| {
+        let mut worlds = w.borrow_mut();
+        if let Some(world) = worlds.get_mut(&(world_id as usize)) {
+            let collider = ColliderBuilder::cylinder(half_height as f32, radius as f32)
+                .density(density as f32)
+                .restitution(0.8)
+                .build();
+
+            let handle = if body_handle_raw == -1 {
+                world.collider_set.insert(collider)
+            } else {
+                let index = (body_handle_raw >> 32) as u32;
+                let gen = (body_handle_raw & 0xFFFFFFFF) as u32;
+                let body_handle = RigidBodyHandle::from_raw_parts(index, gen);
+                world.collider_set.insert_with_parent(
+                    collider, body_handle, &mut world.rigid_body_set
+                )
+            };
+            let (index, gen) = handle.into_raw_parts();
+            return ((index as i64) << 32) | (gen as i64);
+        }
+        -1
+    })
+}
+
+#[wll::export]
 fn rapier_world_step(world_id: i64, steps: i64, time_step: f64) {
     WORLDS.with(|w| {
         let mut worlds = w.borrow_mut();
