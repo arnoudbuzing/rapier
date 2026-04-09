@@ -8,6 +8,8 @@ RapierAddRigidBody::usage = "RapierAddRigidBody[world_id, {x,y,z}, {qx,qy,qz,qw}
 RapierAddColliderCuboid::usage = "RapierAddColliderCuboid[world_id, body_id, {hx,hy,hz}, density] adds a cuboid collider attached to the body.";
 RapierAddColliderSphere::usage = "RapierAddColliderSphere[world_id, body_id, radius, density] adds a spherical collider attached to the body.";
 RapierAddColliderCylinder::usage = "RapierAddColliderCylinder[world_id, body_id, {halfHeight, radius}, density] adds a cylindrical collider attached to the body.";
+RapierAddColliderCone::usage = "RapierAddColliderCone[world_id, body_id, {halfHeight, radius}, density] adds a conical collider attached to the body.";
+RapierAddColliderCapsule::usage = "RapierAddColliderCapsule[world_id, body_id, {halfHeight, radius}, density] adds a capsule collider attached to the body.";
 RapierWorldStep::usage = "RapierWorldStep[world_id, steps, dt] advances the simulation.";
 RapierGetBodyPositions::usage = "RapierGetBodyPositions[world_id] returns all body positions and rotations as a matrix.";
 
@@ -44,6 +46,8 @@ If[$rapierLib =!= $Failed,
   $iRapierAddColliderCuboid = Echo @ LibraryFunctionLoad[$rapierLib, "rapier_add_collider_cuboid", {Integer, Integer, Real, Real, Real, Real}, Integer];
   $iRapierAddColliderSphere = Echo @ LibraryFunctionLoad[$rapierLib, "rapier_add_collider_sphere", {Integer, Integer, Real, Real}, Integer];
   $iRapierAddColliderCylinder = Echo @ LibraryFunctionLoad[$rapierLib, "rapier_add_collider_cylinder", {Integer, Integer, Real, Real, Real}, Integer];
+  $iRapierAddColliderCone = Echo @ LibraryFunctionLoad[$rapierLib, "rapier_add_collider_cone", {Integer, Integer, Real, Real, Real}, Integer];
+  $iRapierAddColliderCapsule = Echo @ LibraryFunctionLoad[$rapierLib, "rapier_add_collider_capsule", {Integer, Integer, Real, Real, Real}, Integer];
   $iRapierWorldStep = Echo @ LibraryFunctionLoad[$rapierLib, "rapier_world_step", {Integer, Integer, Real}, "Void"];
   $iRapierGetBodyPositions = Echo @ LibraryFunctionLoad[$rapierLib, "rapier_get_body_positions", {Integer}, {Real, 1}];
   $iRapierGetBodyHandles = Echo @ LibraryFunctionLoad[$rapierLib, "rapier_get_body_handles", {Integer}, {Integer, 1}];
@@ -73,6 +77,12 @@ If[$rapierLib =!= $Failed,
 
   RapierAddColliderCylinder[worldId_Integer, bodyId_Integer, {halfHeight_?NumericQ, radius_?NumericQ}, density_?NumericQ] :=
     $iRapierAddColliderCylinder[worldId, bodyId, halfHeight, radius, density];
+
+  RapierAddColliderCone[worldId_Integer, bodyId_Integer, {halfHeight_?NumericQ, radius_?NumericQ}, density_?NumericQ] :=
+    $iRapierAddColliderCone[worldId, bodyId, halfHeight, radius, density];
+
+  RapierAddColliderCapsule[worldId_Integer, bodyId_Integer, {halfHeight_?NumericQ, radius_?NumericQ}, density_?NumericQ] :=
+    $iRapierAddColliderCapsule[worldId, bodyId, halfHeight, radius, density];
 
   RapierWorldStep[worldId_Integer, steps_Integer, dt_?NumericQ] := 
     $iRapierWorldStep[worldId, steps, dt];
