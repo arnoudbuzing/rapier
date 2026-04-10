@@ -23,6 +23,7 @@ FixedBody::usage = "FixedBody[primitive, opts] wraps a graphics primitive as a f
 DestroyPhysicsModel::usage = "DestroyPhysicsModel[model] destroys the underlying Rapier world and frees resources.";
 PhysicsModelVideo::usage = "PhysicsModelVideo[frames] creates an AnimationVideo from a list of PhysicsModelObject frames.";
 PhysicsModelEvolve::usage = "PhysicsModelEvolve[model, frames, dt] evolves the model for the given number of frames at time step dt, returning a list of PhysicsModelObject states.";
+PhysicsBoundaryBox::usage = "PhysicsBoundaryBox[{{xmin,ymin,zmin},{xmax,ymax,zmax}}] returns a list of FixedBody walls enclosing the given region. Use inside CreatePhysicsModel.";
 
 Begin["`Private`"];
 
@@ -236,6 +237,13 @@ separateDirectivesAndPrimitive[prim_List] :=
 
 separateDirectivesAndPrimitive[prim_] := {{}, prim};
 
+(* Multiple bare arguments: wrap into a list so directives get separated properly *)
+createBody[worldId_Integer, DynamicBody[args__, opts:OptionsPattern[]]] :=
+  iCreateBody[worldId, {args}, "Dynamic", {opts}] /; !MatchQ[{args}, {_List | _Sphere | _Cuboid | _Cylinder | _Cone | _CapsuleShape}];
+
+createBody[worldId_Integer, FixedBody[args__, opts:OptionsPattern[]]] :=
+  iCreateBody[worldId, {args}, "Fixed", {opts}] /; !MatchQ[{args}, {_List | _Sphere | _Cuboid | _Cylinder | _Cone | _CapsuleShape}];
+
 createBody[worldId_Integer, DynamicBody[prim_, opts___]] :=
   iCreateBody[worldId, prim, "Dynamic", {opts}];
 
@@ -299,15 +307,17 @@ iCreateBody[worldId_Integer, prim_, bodyType_String, opts_List] :=
 Options[CreatePhysicsModel] = {"Gravity" -> {0, 0, -9.81}, "Graphics3DOptions" -> {}};
 
 CreatePhysicsModel[bodies_List, opts:OptionsPattern[]] :=
-  Module[{gravity, worldId, bodyData, g3dOpts},
+  Module[{flatBodies, gravity, worldId, bodyData, g3dOpts},
+    flatBodies = Flatten[bodies];
     gravity = N[OptionValue["Gravity"]];
     g3dOpts = OptionValue["Graphics3DOptions"];
     worldId = RapierWorldCreate[gravity];
 
     bodyData = Table[
       createBody[worldId, body],
-      {body, bodies}
+      {body, flatBodies}
     ];
+    bodyData = Select[bodyData, AssociationQ];
 
     Module[{model, icon},
       model = PhysicsModelObject[<|
@@ -317,7 +327,7 @@ CreatePhysicsModel[bodies_List, opts:OptionsPattern[]] :=
         "Graphics3DOptions" -> g3dOpts,
         "Icon" -> None
       |>];
-      icon = Quiet @ Rasterize[PhysicsModelPlot[model, Axes -> False], "Image", ImageSize -> 80];
+      icon = Quiet @ Rasterize[PhysicsModelPlot[model, Axes -> False, Boxed -> False], "Image", ImageSize -> 80];
       PhysicsModelObject[Append[model[[1]], "Icon" -> icon]]
     ]
   ];
@@ -432,13 +442,18 @@ $defaultColors = {
   RGBColor[0.4, 0.8, 0.8]    (* cyan *)
 };
 
-Options[PhysicsModelPlot] = {PlotRange -> Automatic, Axes -> True, Boxed -> True};
+Options[PhysicsModelPlot] = {PlotRange -> Automatic, Axes -> False, Boxed -> False};
 
 PhysicsModelPlot[PhysicsModelObject[assoc_Association], opts:OptionsPattern[]] :=
-  Module[{bodies, primitives, nColors, passOpts, storedOpts},
+  Module[{bodies, primitives, nColors, storedOpts, mergedOpts, plotRange, axes, boxed},
     bodies = assoc["Bodies"];
     nColors = Length[$defaultColors];
     storedOpts = Lookup[assoc, "Graphics3DOptions", {}];
+
+    (* Option precedence: explicit opts > stored Graphics3DOptions > PhysicsModelPlot defaults *)
+    plotRange = OptionValue[PlotRange] /. Automatic -> (PlotRange /. storedOpts /. {PlotRange -> Automatic});
+    axes = OptionValue[Axes] /. Automatic :> (Axes /. storedOpts /. {Axes -> True});
+    boxed = OptionValue[Boxed] /. Automatic :> (Boxed /. storedOpts /. {Boxed -> True});
 
     primitives = MapIndexed[
       Module[{body = #1, idx = #2[[1]], prim, rotMat, pos, directives, defaultColor, transform},
@@ -462,22 +477,43 @@ PhysicsModelPlot[PhysicsModelObject[assoc_Association], opts:OptionsPattern[]] :
       bodies
     ];
 
-    passOpts = FilterRules[{opts}, Options[Graphics3D]];
+    mergedOpts = FilterRules[
+      Join[{opts}, storedOpts],
+      Options[Graphics3D]
+    ];
 
     Graphics3D[
       primitives,
-      PlotRange -> OptionValue[PlotRange],
-      Axes -> OptionValue[Axes],
-      Boxed -> OptionValue[Boxed],
+      PlotRange -> plotRange,
+      Axes -> axes,
+      Boxed -> boxed,
       Lighting -> "Neutral",
-      Sequence @@ passOpts,
-      Sequence @@ storedOpts
+      Sequence @@ mergedOpts
     ]
   ];
 
 (* --- DestroyPhysicsModel --- *)
 DestroyPhysicsModel[PhysicsModelObject[assoc_Association]] :=
   RapierWorldDestroy[assoc["WorldID"]];
+
+(* --- PhysicsBoundaryBox --- *)
+Options[PhysicsBoundaryBox] = {"Thickness" -> 0.01, "Directives" -> {Opacity[0]}};
+
+PhysicsBoundaryBox[{pmin:{_?NumericQ, _?NumericQ, _?NumericQ}, pmax:{_?NumericQ, _?NumericQ, _?NumericQ}}, opts:OptionsPattern[]] :=
+  Module[{t, d, xmin, ymin, zmin, xmax, ymax, zmax},
+    t = OptionValue["Thickness"];
+    d = OptionValue["Directives"];
+    {xmin, ymin, zmin} = pmin;
+    {xmax, ymax, zmax} = pmax;
+    {
+      FixedBody[{Sequence @@ d, Cuboid[{xmin, ymin, zmin - t}, {xmax, ymax, zmin}]}],
+      FixedBody[{Sequence @@ d, Cuboid[{xmin, ymin, zmax}, {xmax, ymax, zmax + t}]}],
+      FixedBody[{Sequence @@ d, Cuboid[{xmin - t, ymin, zmin}, {xmin, ymax, zmax}]}],
+      FixedBody[{Sequence @@ d, Cuboid[{xmax, ymin, zmin}, {xmax + t, ymax, zmax}]}],
+      FixedBody[{Sequence @@ d, Cuboid[{xmin, ymin - t, zmin}, {xmax, ymin, zmax}]}],
+      FixedBody[{Sequence @@ d, Cuboid[{xmin, ymax, zmin}, {xmax, ymax + t, zmax}]}]
+    }
+  ];
 
 (* --- PhysicsModelEvolve --- *)
 PhysicsModelEvolve[model_PhysicsModelObject, frames_Integer, dt_?NumericQ] :=
