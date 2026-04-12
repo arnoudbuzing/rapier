@@ -1,19 +1,6 @@
-BeginPackage["PhysicsModelLink`"];
+(* ::Package:: *)
 
-RapierVersion::usage = "RapierVersion[] returns the version string of the linked rapier3d Rust crate.";
-RapierCuboidMass::usage = "RapierCuboidMass[hx, hy, hz, density] returns the theoretical mass of a cuboid.";
-RapierWorldCreate::usage = "RapierWorldCreate[{gx, gy, gz}] initializes a new simulation world and returns its ID.";
-RapierWorldDestroy::usage = "RapierWorldDestroy[id] cleans up a simulation world.";
-RapierAddRigidBody::usage = "RapierAddRigidBody[world_id, {x,y,z}, {qx,qy,qz,qw}, type] adds a rigid body.";
-RapierAddColliderCuboid::usage = "RapierAddColliderCuboid[world_id, body_id, {hx,hy,hz}, density] adds a cuboid collider attached to the body.";
-RapierAddColliderSphere::usage = "RapierAddColliderSphere[world_id, body_id, radius, density] adds a spherical collider attached to the body.";
-RapierAddColliderCylinder::usage = "RapierAddColliderCylinder[world_id, body_id, {halfHeight, radius}, density] adds a cylindrical collider attached to the body.";
-RapierAddColliderCone::usage = "RapierAddColliderCone[world_id, body_id, {halfHeight, radius}, density] adds a conical collider attached to the body.";
-RapierAddColliderCapsule::usage = "RapierAddColliderCapsule[world_id, body_id, {halfHeight, radius}, density] adds a capsule collider attached to the body.";
-QuaternionToTransformation::usage = "QuaternionToTransformation[{qx, qy, qz, qw}] converts a quaternion to a 3x3 rotation matrix.";
-RapierSetBodyVelocity::usage = "RapierSetBodyVelocity[world_id, body_id, {vx,vy,vz}] sets the linear velocity of a rigid body.";
-RapierWorldStep::usage = "RapierWorldStep[world_id, steps, dt] advances the simulation.";
-RapierGetBodyPositions::usage = "RapierGetBodyPositions[world_id] returns all body positions and rotations as a matrix.";
+BeginPackage["ArnoudBuzing`PhysicsModelLink`"];
 
 CreatePhysicsModel::usage = "CreatePhysicsModel[{body1, body2, ...}, opts] creates a physics simulation from DynamicBody/FixedBody wrapped primitives. Returns a PhysicsModelObject.";
 PhysicsModelIterate::usage = "PhysicsModelIterate[model, steps, dt] advances the physics simulation by steps*dt time and returns an updated PhysicsModelObject.";
