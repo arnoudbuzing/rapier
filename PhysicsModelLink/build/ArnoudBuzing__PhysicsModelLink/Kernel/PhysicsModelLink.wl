@@ -10,6 +10,7 @@ DynamicBody::usage = "DynamicBody[primitive, opts] wraps a graphics primitive as
 FixedBody::usage = "FixedBody[primitive, opts] wraps a graphics primitive as a fixed (immovable) rigid body.";
 DestroyPhysicsModel::usage = "DestroyPhysicsModel[model] destroys the underlying Rapier world and frees resources.";
 PhysicsModelVideo::usage = "PhysicsModelVideo[frames] creates an AnimationVideo from a list of PhysicsModelObject frames.";
+PhysicsModelAnimate::usage = "PhysicsModelAnimate[frames] creates a ListAnimate animation from a list of PhysicsModelObject frames.";
 PhysicsModelEvolve::usage = "PhysicsModelEvolve[model, frames, dt] evolves the model for the given number of frames at time step dt, returning a list of PhysicsModelObject states.";
 PhysicsBoundaryBox::usage = "PhysicsBoundaryBox[{{xmin,ymin,zmin},{xmax,ymax,zmax}}] returns a list of FixedBody walls enclosing the given region. Use inside CreatePhysicsModel.";
 
@@ -550,6 +551,17 @@ PhysicsModelVideo[frames_List, opts:OptionsPattern[]] :=
       PhysicsModelPlot[frame, Sequence @@ plotOpts],
       {frame, frames}
     ]
+  ];
+
+(* --- PhysicsModelAnimate --- *)
+Options[PhysicsModelAnimate] = {PlotRange -> {{-4.1, 4.1}, {-4.1, 4.1}, {-1.1, 5.1}}, AnimationRate -> 60};
+
+PhysicsModelAnimate[frames_List, opts:OptionsPattern[]] :=
+  Module[{plotOpts, animOpts, renderedFrames},
+    plotOpts = FilterRules[{opts, Options[PhysicsModelAnimate]}, Options[PhysicsModelPlot]];
+    animOpts = FilterRules[{opts, Options[PhysicsModelAnimate]}, Options[ListAnimate]];
+    renderedFrames = PhysicsModelPlot[#, Sequence @@ plotOpts] & /@ frames;
+    ListAnimate[renderedFrames, Sequence @@ animOpts]
   ];
 
 End[];

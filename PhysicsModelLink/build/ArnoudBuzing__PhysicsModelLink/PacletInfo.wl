@@ -24,6 +24,7 @@ PacletObject[
           "ArnoudBuzing`PhysicsModelLink`PhysicsModelEvolve",
           "ArnoudBuzing`PhysicsModelLink`PhysicsModelIterate",
           "ArnoudBuzing`PhysicsModelLink`PhysicsModelObject",
+          "ArnoudBuzing`PhysicsModelLink`PhysicsModelAnimate",
           "ArnoudBuzing`PhysicsModelLink`PhysicsModelPlot",
           "ArnoudBuzing`PhysicsModelLink`PhysicsModelVideo"
         }
