@@ -76,7 +76,7 @@ If[$physicsLinkLib =!= $Failed,
   $iRapierAddColliderCylinder = LibraryFunctionLoad[$physicsLinkLib, "rapier_add_collider_cylinder", {Integer, Integer, Real, Real, Real, Real, Real}, Integer];
   $iRapierAddColliderCone = LibraryFunctionLoad[$physicsLinkLib, "rapier_add_collider_cone", {Integer, Integer, Real, Real, Real, Real, Real}, Integer];
   $iRapierAddColliderCapsule = LibraryFunctionLoad[$physicsLinkLib, "rapier_add_collider_capsule", {Integer, Integer, Real, Real, Real, Real, Real}, Integer];
-  $iRapierAddColliderConvexHull = LibraryFunctionLoad[$physicsLinkLib, "rapier_add_collider_convex_hull", {Integer, Integer, {Real, 1}, Real, Real, Real}, Integer];
+  $iRapierAddColliderConvexHull = LibraryFunctionLoad[$physicsLinkLib, "rapier_add_collider_convex_hull", {Integer, Integer, LibraryDataType[NumericArray, "Real64"], Real, Real, Real}, Integer];
   $iRapierWorldStep = LibraryFunctionLoad[$physicsLinkLib, "rapier_world_step", {Integer, Integer, Real}, "Void"];
   $iRapierGetBodyPositions = LibraryFunctionLoad[$physicsLinkLib, "rapier_get_body_positions", {Integer}, {Real, 1}];
   $iRapierGetBodyHandles = LibraryFunctionLoad[$physicsLinkLib, "rapier_get_body_handles", {Integer}, {Integer, 1}];
@@ -115,8 +115,8 @@ If[$physicsLinkLib =!= $Failed,
   RapierAddColliderCapsule[worldId_Integer, bodyId_Integer, {halfHeight_?NumericQ, radius_?NumericQ}, density_?NumericQ, restitution_?NumericQ, friction_?NumericQ] :=
     $iRapierAddColliderCapsule[worldId, bodyId, halfHeight, radius, density, restitution, friction];
 
-  RapierAddColliderConvexHull[worldId_Integer, bodyId_Integer, points:{{_?NumericQ, _?NumericQ, _?NumericQ}..}, density_?NumericQ, restitution_?NumericQ, friction_?NumericQ] :=
-    $iRapierAddColliderConvexHull[worldId, bodyId, Flatten[N[points]], density, restitution, friction];
+  RapierAddColliderConvexHull[worldId_Integer, bodyId_Integer, pts_List, density_?NumericQ, restitution_?NumericQ, friction_?NumericQ] :=
+    $iRapierAddColliderConvexHull[worldId, bodyId, NumericArray[Flatten[N[pts]], "Real64"], density, restitution, friction];
 
   (* Backward-compatible overloads: default restitution=0.5, friction=0.5 *)
   RapierAddColliderCuboid[worldId_Integer, bodyId_Integer, dims:{_?NumericQ, _?NumericQ, _?NumericQ}, density_?NumericQ] :=
@@ -134,8 +134,8 @@ If[$physicsLinkLib =!= $Failed,
   RapierAddColliderCapsule[worldId_Integer, bodyId_Integer, dims:{_?NumericQ, _?NumericQ}, density_?NumericQ] :=
     RapierAddColliderCapsule[worldId, bodyId, dims, density, 0.5, 0.5];
 
-  RapierAddColliderConvexHull[worldId_Integer, bodyId_Integer, points:{{_?NumericQ, _?NumericQ, _?NumericQ}..}, density_?NumericQ] :=
-    RapierAddColliderConvexHull[worldId, bodyId, points, density, 0.5, 0.5];
+  RapierAddColliderConvexHull[worldId_Integer, bodyId_Integer, pts_List, density_?NumericQ] :=
+    RapierAddColliderConvexHull[worldId, bodyId, pts, density, 0.5, 0.5];
 
   RapierWorldStep[worldId_Integer, steps_Integer, dt_?NumericQ] := 
     $iRapierWorldStep[worldId, steps, dt];
@@ -257,21 +257,25 @@ extractPrimitiveInfo[CapsuleShape[{p1:{_?NumericQ, _?NumericQ, _?NumericQ}, p2:{
     axis = N[p2 - p1];
     halfHeight = Norm[axis] / 2.0;
     rot = rotationFromAxisToY[axis];
-    {center, {"Capsule", halfHeight, N[radius]}, rot}
+    {center, {"Capsule", halfHeight, N[r]}, rot}
   ];
 
 (* ConvexHullMesh *)
 extractPrimitiveInfo[mesh_ /; BoundaryMeshRegionQ[mesh] || MeshRegionQ[mesh]] :=
-  Module[{pts},
-    pts = N[MeshCoordinates[mesh]];
-    {Mean[pts], {"ConvexHull", pts}, IdentityMatrix[3]}
+  Module[{pts, center, offsetPts},
+    pts = MeshCoordinates[mesh];
+    center = Mean[pts];
+    offsetPts = N[Map[# - center &, pts]];
+    {center, {"ConvexHull", offsetPts}, IdentityMatrix[3]}
   ];
 
 (* Translate[ConvexHullMesh[...], offset] produces a TransformedRegion *)
 extractPrimitiveInfo[TransformedRegion[mesh_, tf_TransformationFunction]] :=
-  Module[{pts},
+  Module[{pts, center, offsetPts},
     pts = N[tf /@ MeshCoordinates[mesh]];
-    {Mean[pts], {"ConvexHull", pts}, IdentityMatrix[3]}
+    center = Mean[pts];
+    offsetPts = N[Map[# - center &, pts]];
+    {center, {"ConvexHull", offsetPts}, IdentityMatrix[3]}
   ] /; BoundaryMeshRegionQ[mesh] || MeshRegionQ[mesh];
 
 (* --- Helper: recognise physics primitives including mesh regions --- *)
@@ -374,15 +378,13 @@ bodyBoundingBox[body_Association] :=
     pos = body["Position"];
     shapeType = body["ShapeType"];
     params = body["ShapeParams"];
-    If[shapeType === "ConvexHull",
-      Return[{Min /@ Transpose[params[[1]]], Max /@ Transpose[params[[1]]]}];
-    ];
     r = Switch[shapeType,
       "Sphere", params[[1]] * {1, 1, 1},
       "Cuboid", params[[1]],
       "Cylinder", {params[[2]], params[[2]], params[[1]] + params[[2]]},
       "Cone", {params[[2]], params[[2]], params[[1]] + params[[2]]},
       "Capsule", {params[[2]], params[[2]], params[[1]] + params[[2]]},
+      "ConvexHull", Max /@ Abs[Transpose[params[[1]]]],
       _, {1, 1, 1}
     ];
     {pos - r, pos + r}
@@ -529,9 +531,8 @@ bodyToGraphics[body_Association] :=
           CapsuleShape[{{0, -hh, 0}, {0, hh, 0}}, r]
         ],
       "ConvexHull",
-        Module[{pts = params[[1]], center},
-          center = Mean[pts];
-          MeshRegion[# - center & /@ pts, MeshCells[ConvexHullMesh[pts], 2]]
+        Module[{pts = params[[1]]},
+          MeshPrimitives[ConvexHullMesh[pts], 2]
         ]
     ]
   ];
